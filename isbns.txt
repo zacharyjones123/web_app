@@ -1,6 +1,0 @@
-Type:      BOOK
-Title:     Swan In Love
-Author:    Eve Bunting
-ISBN:      9780689820809
-Year:      2000
-Publisher: Atheneum
