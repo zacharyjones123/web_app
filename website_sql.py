@@ -1,7 +1,7 @@
 import mysql.connector
 
 """
-File Name: sql_test.py
+File Name: website_sql.py
 Purpose:  To connect to my personal websites
           MySql database and testing basic
           functionality

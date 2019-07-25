@@ -1,12 +1,16 @@
 #!/usr/bin/env python
-import isbnlib
-from isbntools.app import *
 
+# https://pypi.org/project/isbntools/
+from isbntools.app import isbn_from_words
+from isbntools.app import registry
+from isbntools.app import meta
+from isbnlib.dev import NoDataForSelectorError
+from isbnlib.dev import ISBNLibHTTPError
 """
 File Name: isbn_processor.py
 Purpose: To take in isbn's from a raw.txt file
         and output data into a isbn.txt file in
-        a format that has informationa about the
+        a format that has information about the
         book
 Modules Used:   isbnlib
                 isbntools.app
@@ -78,16 +82,16 @@ def get_data(line):
     return book_data
 
 
-def write_book_to_file(dictonary):
+def write_book_to_file(dictionary):
     """
     Takes the dictionary created with get_data
     and saves it into a file to be accessed at
     a later time
-    :param dictonary:
+    :param dictionary:
     :return:
     """
     with open("isbn.txt", "a") as isbn_txt:
-        for value in dictonary.items():
+        for value in dictionary.items():
             isbn_txt.write("{}:{}".format(value[0], value[1]))
             isbn_txt.write("\n")
 
@@ -103,9 +107,9 @@ def process_isbns():
                 try:
                     book_dict_results = get_data(last_isbn_tried)
                     write_book_to_file(book_dict_results)
-                except isbnlib.dev._exceptions.NoDataForSelectorError:
+                except NoDataForSelectorError:
                     print("{} does not exist".format(raw_line))
-    except isbnlib.dev._exceptions.ISBNLibHTTPError:
+    except ISBNLibHTTPError:
         print("O no, you made {} request!".format(num_of_requests))
         print("We stopped at {} isbn.".format(last_isbn_tried))
 
