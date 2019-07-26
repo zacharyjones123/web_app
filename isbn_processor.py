@@ -29,6 +29,9 @@ def clean_isbn(isbn_given):
     isbn_clean = isbn_from_words(query)
     return isbn_clean
 
+def add_book(line):
+    write_book_to_file(get_data(line))
+
 
 def get_data(line):
     """
@@ -79,6 +82,7 @@ def get_data(line):
             book_data["Author"].append(data.split(":")[1].strip())
         else:
             book_data[data.split(":")[0].strip()] = data.split(":")[1].strip()
+    print(book_data)
     return book_data
 
 
@@ -96,22 +100,50 @@ def write_book_to_file(dictionary):
             isbn_txt.write("\n")
 
 
+def get_dict_from_file():
+    new_dict = []
+    with open("isbn.txt", "r") as isbn_txt:
+        counter = 0
+        new_temp_dict = {}
+        for line in isbn_txt:
+            line_split = line.split(":")
+            new_temp_dict[line_split[0]] = line_split[1]
+            counter += 1
+            if counter == 5:
+                new_dict.append(new_temp_dict)
+                counter = 0
+                new_temp_dict = {}
+    return new_dict
+
+
 def process_isbns():
+    #Type Error = invalid ISBN number
+    # isbnlib.dev._exceptions.ISBNNotConsistentError = not sure of this error yet
     num_of_requests = 0
     try:
         last_isbn_tried = None
-        with open("raw.txt") as raw_txt:
-            for raw_line in raw_txt.readlines():
-                num_of_requests += 1
-                last_isbn_tried = clean_isbn(raw_line)
-                try:
-                    book_dict_results = get_data(last_isbn_tried)
-                    write_book_to_file(book_dict_results)
-                except NoDataForSelectorError:
-                    print("{} does not exist".format(raw_line))
+        raw_txt = open("raw.txt")
+        while True:
+            raw_line = raw_txt.readline()
+            num_of_requests += 1
+            last_isbn_tried = clean_isbn(raw_line)
+            try:
+                book_dict_results = get_data(last_isbn_tried)
+                write_book_to_file(book_dict_results)
+            except NoDataForSelectorError:
+                print("{} does not exist".format(raw_line))
+                with open("not_found.txt", "w") as not_found_txt:
+                    not_found_txt.write(last_isbn_tried)
+                    not_found_txt.write("\n")
+                # Need to finish reading the file
+
     except ISBNLibHTTPError:
         print("O no, you made {} request!".format(num_of_requests))
         print("We stopped at {} isbn.".format(last_isbn_tried))
+        with open("isbn_temp.txt") as isbn_temp_txt:
+            while True:
+                isbn_temp_txt.write(raw_txt.readline())
+
 
 # Need to add tester data
 # Main file to run is process_isbns()

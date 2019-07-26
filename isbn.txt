@@ -1,6 +1,2835 @@
+Author:['Walt Whitman']
+Type:BOOK
+Title:Walt Whitman
+ISBN:9780439375450
+Year:1997
+Publisher:
+Author:['Francisco X. Alarcón']
+Type:BOOK
+Title:Del Ombligo De La Luna
+ISBN:9780892392018
+Year:2005
+Publisher:Children's Book Press
+Author:['Jack Prelutsky']
+Type:BOOK
+Title:Me I Am!
+ISBN:9780545397629
+Year:2011
+Publisher:
+Author:['Nancy Willard', 'Alice Provensen', 'Martin Provensen']
+Type:BOOK
+Title:A Visit To William Blake's Inn
+ISBN:9780152938239
+Year:1981
+Publisher:Houghton Mifflin Harcourt
+Author:['Patricia M. Stockland']
+Type:BOOK
+Title:Recess, Rhyme, And Reason
+ISBN:9780756505646
+Year:2004
+Publisher:Capstone
+Author:['J. Patrick Lewis']
+Type:BOOK
+Title:The Brothers' War
+ISBN:9781426300363
+Year:2007
+Publisher:National Geographic Books
+Author:['Jack Prelutsky']
+Type:BOOK
+Title:Awful Ogre's Awful Day
+ISBN:9780439437943
+Year:2002
+Publisher:
+Author:['Jack Prelutsky']
+Type:BOOK
+Title:It's Thanksgiving
+ISBN:9780590415712
+Year:1982
+Publisher:Scholastic
+Author:['Jack Prelutsky', 'Marylin Hafner']
+Type:BOOK
+Title:Rainy Rainy Saturday
+ISBN:9780688802523
+Year:1980
+Publisher:William Morrow & Company
+Author:['Allan Wolf', 'Greg Clarke']
+Type:BOOK
+Title:The Blood-Hungry Spleen And Other Poems About Our Parts
+ISBN:9780763638061
+Year:2008
+Publisher:Candlewick Press
+Author:['Stuart Hanscomb']
+Type:BOOK
+Title:Critical Thinking
+ISBN:9781138826243
+Year:2016
+Publisher:Routledge
+Author:['Huston Smith']
+Type:BOOK
+Title:Why Religion Matters
+ISBN:9780060671020
+Year:2001
+Publisher:HarperOne
+Author:['James R. DiSanza', 'Nancy J. Legge']
+Type:BOOK
+Title:Business And Professional Communication
+ISBN:9780205721498
+Year:2011
+Publisher:Pearson College Division
+Author:['Bob Raczka']
+Type:BOOK
+Title:Wet Cement
+ISBN:9781626722361
+Year:2016
+Publisher:Roaring Brook Press
+Author:['Virginia Driving Hawk Sneve']
+Type:BOOK
+Title:Dancing Teepees
+ISBN:9780590444071
+Year:1991
+Publisher:
+Author:['']
+Type:BOOK
+Title:Winter Poems
+ISBN:9780590975537
+Year:1994
+Publisher:
+Author:['Langston Hughes']
+Type:BOOK
+Title:The Negro Speaks Of Rivers
+ISBN:9780786818679
+Year:2009
+Publisher:Jump At The Sun
+Author:['Marilyn Burns', 'Debbie Tilley']
+Type:BOOK
+Title:Spaghetti And Meatballs For All!
+ISBN:9780590944595
+Year:1997
+Publisher:Scholastic Press
+Author:['David M. Schwartz']
+Type:BOOK
+Title:How Much Is A Million? 20Th Anniversary Edition
+ISBN:9780688099336
+Year:1993
+Publisher:Harper Collins
+Author:['Sue Kassirer']
+Type:BOOK
+Title:Math Fair Blues
+ISBN:9780439491976
+Year:2003
+Publisher:
+Author:['David A. Adler']
+Type:BOOK
+Title:Perimeter, Area, And Volume
+ISBN:9780823422906
+Year:2012
+Publisher:
+Author:['Michael Hall']
+Type:BOOK
+Title:Perfect Square
+ISBN:9780061915130
+Year:2011
+Publisher:Harper Collins
+Author:['']
+Type:BOOK
+Title:Counting
+ISBN:9780439135191
+Year:1999
+Publisher:
+Author:['Stuart J. Murphy']
+Type:BOOK
+Title:Give Me Half!
+ISBN:9780590136914
+Year:1996
+Publisher:Scholastic Incorporated
+Author:['David M. Schwartz']
+Type:BOOK
+Title:Millions To Measure
+ISBN:9780688129163
+Year:2003
+Publisher:HarperCollins
+Author:['David A. Adler']
+Type:BOOK
+Title:Fractions, Decimals, And Percents
+ISBN:9780545251624
+Year:2010
+Publisher:
+Author:['Edward Einhorn']
+Type:BOOK
+Title:Fractions In Disguise
+ISBN:9781570917738
+Year:2014
+Publisher:Charlesbridge Pub Incorporated
+Author:['Marilyn Burns', 'Gordon Silveria']
+Type:BOOK
+Title:The Greedy Triangle
+ISBN:9780590489911
+Year:1994
+Publisher:Scholastic Inc.
+Author:['Jerry Pallotta', 'Rob Bolster']
+Type:BOOK
+Title:Hershey's Milk Chocolate Weights And Measures
+ISBN:9780439388771
+Year:2003
+Publisher:Cartwheel Books
+Author:['Ann Tompert']
+Type:BOOK
+Title:Grandfather Tang's Story
+ISBN:9780517574874
+Year:1990
+Publisher:Knopf Books for Young Readers
+Author:['Donald Crews']
+Type:BOOK
+Title:Ten Black Dots
+ISBN:9780590464796
+Year:1992
+Publisher:
+Author:['Pat Hutchins']
+Type:BOOK
+Title:Ten Red Apples
+ISBN:9780439322973
+Year:2001
+Publisher:
+Author:['Jacqueline Rogers']
+Type:BOOK
+Title:Kindergarten Count To 100
+ISBN:9780439799577
+Year:2005
+Publisher:
+Author:['Julie Glass']
+Type:BOOK
+Title:The Fly On The Ceiling
+ISBN:9780679886075
+Year:1998
+Publisher:Random House Books for Young Readers
+Author:['Robert E. Wells']
+Type:BOOK
+Title:Is A Blue Whale The Biggest Thing There Is?
+ISBN:9780807536568
+Year:1993
+Publisher:Albert Whitman and Company
+Author:['Scott Gifford']
+Type:BOOK
+Title:Piece
+ISBN:9781582461021
+Year:2003
+Publisher:
+Author:['Debi Gliori']
+Type:BOOK
+Title:What's The Time, Mr Wolf?
+ISBN:9781408819401
+Year:2012
+Publisher:A&C Black
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid
+ISBN:9781419705847
+Year:2012
+Publisher:Harry N. Abrams
+Author:['Barry Denenberg']
+Type:BOOK
+Title:So Far From Home
+ISBN:9780439341929
+Year:1997
+Publisher:
+Author:['Pat McKissack']
+Type:BOOK
+Title:A Picture Of Freedom
+ISBN:9780590259880
+Year:1997
+Publisher:
+Author:['Kathryn Lasky']
+Type:BOOK
+Title:Marie Antoinette, Princess Of Versailles
+ISBN:9780439076661
+Year:2000
+Publisher:Scholastic Inc.
+Author:['Jim Murphy']
+Type:BOOK
+Title:The Journal Of James Edmond Pease, A Civil War Union Soldier
+ISBN:9780590438148
+Year:1998
+Publisher:Scholastic Press
+Author:['Kathryn Lasky']
+Type:BOOK
+Title:The Journal Of Augustus Pelletier
+ISBN:9780590684897
+Year:2000
+Publisher:
+Author:['Lauren Myracle']
+Type:BOOK
+Title:Thirteen
+ISBN:9780142413708
+Year:2009
+Publisher:Puffin
+Author:['Lauren Myracle']
+Type:BOOK
+Title:Twelve
+ISBN:9780142410912
+Year:2008
+Publisher:Penguin
+Author:['Lauren Myracle']
+Type:BOOK
+Title:Eleven
+ISBN:9780142403464
+Year:2005
+Publisher:Puffin
+Author:['Lauren Myracle']
+Type:BOOK
+Title:Ten
+ISBN:9780142421345
+Year:2012
+Publisher:Puffin
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid # 4 - Dog Days
+ISBN:9780810983915
+Year:2009
+Publisher:Amulet Books
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid
+ISBN:9781419719615
+Year:2015
+Publisher:
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid
+ISBN:9780810970687
+Year:2009
+Publisher:Amulet Books
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid
+ISBN:9781419711763
+Year:2013
+Publisher:Amulet Books
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Wimpy Kid Movie Diary
+ISBN:9781419707001
+Year:2012
+Publisher:
+Author:['Jeff Kinney']
+Type:BOOK
+Title:Diary Of A Wimpy Kid
+ISBN:9780810988934
+Year:2007
+Publisher:
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Earthquake In The Early Morning
+ISBN:9780439403122
+Year:2002
+Publisher:
+Author:['']
+Type:BOOK
+Title:Titanic
+ISBN:9780375813573
+Year:2002
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Revolutionary War On Wednesday
+ISBN:9780679890683
+Year:2000
+Publisher:Random House Books for Young Readers
+Author:['Will Osborne', 'Mary Pope Osborne']
+Type:BOOK
+Title:Pirates
+ISBN:9780375802997
+Year:2001
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Tigers At Twilight
+ISBN:9780679890652
+Year:1999
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Tonight On The Titanic
+ISBN:9780679890638
+Year:1999
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne', 'Natalie Pope Boyce']
+Type:BOOK
+Title:Pilgrims
+ISBN:9780439895897
+Year:2006
+Publisher:
+Author:['Mary Pope Osborne', 'Will Osborne']
+Type:BOOK
+Title:Twisters And Other Terrible Storms
+ISBN:9780375813580
+Year:2003
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Mummies In The Morning
+ISBN:9780679824244
+Year:1993
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:The Knight At Dawn
+ISBN:9780679824121
+Year:1993
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:A Ghost Tale For Christmas Time
+ISBN:9780375856525
+Year:2010
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Monday With A Mad Genius
+ISBN:9780375837296
+Year:2007
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Blizzard Of The Blue Moon [With Sticker]
+ISBN:9780375830389
+Year:2007
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Thanksgiving On Thursday
+ISBN:9780375806155
+Year:2002
+Publisher:Random House Books for Young Readers
+Author:['Ron Roy']
+Type:BOOK
+Title:The Absent Author
+ISBN:9780590819183
+Year:1998
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Bald Bandit
+ISBN:9780679884491
+Year:1997
+Publisher:Random House Books for Young Readers
+Author:['Ron Roy']
+Type:BOOK
+Title:The Invisible Island
+ISBN:9780679994572
+Year:1999
+Publisher:Random House Books for Young Readers
+Author:['Ron Roy']
+Type:BOOK
+Title:The Jaguar's Jewel
+ISBN:9780439326834
+Year:2000
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Panda Puzzle
+ISBN:9780439516846
+Year:2002
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:White House White-Out
+ISBN:9780545120487
+Year:2008
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Orange Outlaw
+ISBN:9780439516839
+Year:2003
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Yellow Yacht
+ISBN:9780439785525
+Year:2006
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Vampire's Vacation
+ISBN:9780439680905
+Year:1997
+Publisher:
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B. Jones Is A Party Animal
+ISBN:9780439137522
+Year:1997
+Publisher:
+Author:['Barbara Park', 'Denise Brunkus']
+Type:BOOK
+Title:Junie B. Jones And Her Big Fat Mouth
+ISBN:9780590638876
+Year:1999
+Publisher:
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B. Jones And The Stupid Smelly Bus
+ISBN:9780679826422
+Year:1992
+Publisher:Random House Books for Young Readers
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B. Jones And A Little Monkey Business
+ISBN:9780679838869
+Year:1993
+Publisher:Random House Books for Young Readers
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B. Jones And Her Big Fat Mouth
+ISBN:9780679844075
+Year:1993
+Publisher:Random House Books for Young Readers
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B. Jones And Some Sneaky Peeky Spying
+ISBN:9780679851011
+Year:1994
+Publisher:Random House Books for Young Readers
+Author:['Barbara Park']
+Type:BOOK
+Title:Junie B., First Grader Toothless Wonder
+ISBN:9780439569668
+Year:2002
+Publisher:
+Author:['Debbie Dadey', 'Marcia Thornton Jones']
+Type:BOOK
+Title:Vampires Don't Wear Polka Dots
+ISBN:9780590434119
+Year:1990
+Publisher:Scholastic Paperbacks
+Author:['Mary Pope Osborne', 'Natalie Pope Boyce']
+Type:BOOK
+Title:Dolphins And Sharks
+ISBN:9780375823770
+Year:2003
+Publisher:Random House Children's Books
+Author:['Mary Pope Osborne', 'Natalie Pope Boyce']
+Type:BOOK
+Title:Polar Bears And The Arctic
+ISBN:9780375832222
+Year:2007
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne', 'Natalie Pope Boyce']
+Type:BOOK
+Title:American Revolution
+ISBN:9780375823794
+Year:2004
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne', 'Will Osborne']
+Type:BOOK
+Title:Twisters And Other Terrible Storms
+ISBN:9780375813580
+Year:2003
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Pirates Past Noon
+ISBN:9780590629850
+Year:1994
+Publisher:Scholastic Incorporated
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Night Of The Ninjas
+ISBN:9780679863717
+Year:1995
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Afternoon On The Amazon
+ISBN:9780590965422
+Year:1996
+Publisher:Scholastic Incorporated
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Sunset Of The Sabertooth
+ISBN:9780679863731
+Year:1996
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Midnight On The Moon
+ISBN:9780679863748
+Year:1996
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Dolphins At Daybreak
+ISBN:9780679883388
+Year:1997
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Ghost Town At Sundown
+ISBN:9780439227490
+Year:1998
+Publisher:
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Polar Bears Past Bedtime
+ISBN:9780679883418
+Year:1998
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Day Of The Dragon King
+ISBN:9780679890515
+Year:1998
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Viking Ships At Sunrise
+ISBN:9780679890614
+Year:1998
+Publisher:Random House Books for Young Readers
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:Hour Of The Olympics
+ISBN:9780679890621
+Year:1998
+Publisher:Random House Books for Young Readers
+Author:['Laurence Santrey']
+Type:BOOK
+Title:Discovering The Stars
+ISBN:9780893755690
+Year:1982
+Publisher:Troll Communications Llc
+Author:['Nigel Hawkes']
+Type:BOOK
+Title:Mysteries Of The Universe
+ISBN:9780761309321
+Year:2000
+Publisher:
+Author:['Rebecca Lynn Grambo']
+Type:BOOK
+Title:Exploring Weird Science
+ISBN:9781561566778
+Year:1998
+Publisher:Kidsbooks.com
+Author:['Amy Shields']
+Type:BOOK
+Title:Little Kids First Big Book Of Why
+ISBN:9781426307935
+Year:2011
+Publisher:National Geographic Books
+Author:['']
+Type:BOOK
+Title:Kites Sail High
+ISBN:9780590437646
+Year:1988
+Publisher:Scholastic Incorporated
+Author:['Ruth Heller']
+Type:BOOK
+Title:A Cache Of Jewels
+ISBN:9780590425865
+Year:1987
+Publisher:Scholastic Incorporated
+Author:['']
+Type:BOOK
+Title:Merry-Go-Round
+ISBN:9780590456777
+Year:1992
+Publisher:Scholastic Incorporated
+Author:['Brian P. Cleary']
+Type:BOOK
+Title:Hairy, Scary, Ordinary
+ISBN:9780439253840
+Year:2000
+Publisher:
+Author:['Barbara Cooper']
+Type:BOOK
+Title:Hannah Hyphen-Hyphen
+ISBN:9780836842265
+Year:2004
+Publisher:Gareth Stevens Publishing LLLP
+Author:['Patricia Relf', 'Joanna Cole']
+Type:BOOK
+Title:The Magic School Bus Plants Seeds
+ISBN:9780590222969
+Year:1995
+Publisher:Scholastic Inc.
+Author:['Nancy E. Krulik', 'Joanna Cole']
+Type:BOOK
+Title:The Magic School Bus Butterfly And The Bog Beast
+ISBN:9780590508346
+Year:1996
+Publisher:Cambridge University Press
+Author:['Patricia Relf', 'Joanna Cole', 'Scholastic Productions']
+Type:BOOK
+Title:Scholastic's The Magic School Bus Gets Eaten
+ISBN:9780590484145
+Year:1996
+Publisher:Scholastic Inc.
+Author:['Joanne Cole', 'Norman Bridwell']
+Type:BOOK
+Title:The Magic School Bus Gets All Dried Up/ By Joanne Cole
+ISBN:9780590508315
+Year:1996
+Publisher:
+Author:['Peter Cook']
+Type:BOOK
+Title:You Wouldn't Want To Sail On The Mayflower! (Revised Edition)
+ISBN:9780531271070
+Year:2013
+Publisher:Franklin Watts
+Author:['Thomas Ratliff', 'David Salariya']
+Type:BOOK
+Title:You Wouldn't Want To Be A Civil War Soldier!
+ISBN:9780531259474
+Year:2013
+Publisher:Franklin Watts
+Author:['Jacqueline Morley', 'David Antram', 'David Salariya']
+Type:BOOK
+Title:You Wouldn't Want To Be Cursed By King Tut!
+ISBN:9780531208748
+Year:2012
+Publisher:
+Author:['Fiona MacDonald']
+Type:BOOK
+Title:You Wouldn't Want To Be A Slave In Ancient Greece! (Revised Edition)
+ISBN:9780531271025
+Year:2013
+Publisher:Franklin Watts
+Author:['Anita Ganeri', 'Mark Darling']
+Type:BOOK
+Title:Dinosaurs And Prehistoric Animals
+ISBN:9780871974877
+Year:2002
+Publisher:
+Author:['']
+Type:BOOK
+Title:Who Is In The Mirror?
+ISBN:9780871975195
+Year:2005
+Publisher:
+Author:['']
+Type:BOOK
+Title:Are My Bones Soft And Bendy?
+ISBN:9780871974891
+Year:2002
+Publisher:
+Author:['Anita Ganeri', 'Mark Darling']
+Type:BOOK
+Title:Dinosaurs And Prehistoric Animals
+ISBN:9780871974877
+Year:2002
+Publisher:
+Author:['Anita Ganeri', 'Miles Kelly Publishing']
+Type:BOOK
+Title:Are My Bones Bendy?
+ISBN:9780871975188
+Year:2007
+Publisher:
+Author:['']
+Type:BOOK
+Title:Are My Bones Soft And Bendy?
+ISBN:9780871974891
+Year:2002
+Publisher:
+Author:['']
+Type:BOOK
+Title:Who Is In The Mirror?
+ISBN:9780871975195
+Year:2005
+Publisher:
+Author:['Anita Ganeri', 'Miles Kelly Publishing']
+Type:BOOK
+Title:Are My Bones Bendy?
+ISBN:9780871975188
+Year:2007
+Publisher:
+Author:['']
+Type:BOOK
+Title:Who Is In The Mirror?
+ISBN:9780871975195
+Year:2005
+Publisher:
+Author:['Anita Ganeri', 'Mark Darling']
+Type:BOOK
+Title:Dinosaurs And Prehistoric Animals
+ISBN:9780871974877
+Year:2002
+Publisher:
+Author:['Anita Ganeri', 'Mark Darling']
+Type:BOOK
+Title:Dinosaurs And Prehistoric Animals
+ISBN:9780871974877
+Year:2002
+Publisher:
+Author:['Anita Ganeri', 'Mark Darling']
+Type:BOOK
+Title:Dinosaurs And Prehistoric Animals
+ISBN:9780871974877
+Year:2002
+Publisher:
+Author:['Grace Norwich']
+Type:BOOK
+Title:I Am John F. Kennedy
+ISBN:9780545568838
+Year:2013
+Publisher:Scholastic Paperbacks
+Author:['Jean Fritz']
+Type:BOOK
+Title:Will You Sign Here, John Hancock?
+ISBN:9780698114401
+Year:1997
+Publisher:Puffin
+Author:['Sharon Gayle', 'Bob Dacey', 'Debra Bandelin']
+Type:BOOK
+Title:Teddy Roosevelt
+ISBN:9780689858253
+Year:2004
+Publisher:Simon and Schuster
+Author:['Martha Brenner']
+Type:BOOK
+Title:Abe Lincoln's Hat
+ISBN:9780679849773
+Year:1994
+Publisher:Random House Books for Young Readers
+Author:['James Giblin']
+Type:BOOK
+Title:George Washington
+ISBN:9780590425513
+Year:1992
+Publisher:
+Author:['Jonah Winter']
+Type:BOOK
+Title:Barack
+ISBN:9780061703928
+Year:2008
+Publisher:Harper Collins
+Author:['Laurence Santrey']
+Type:BOOK
+Title:Louisa May Alcott, Young Writer
+ISBN:9780816705641
+Year:1986
+Publisher:Troll Communications Llc
+Author:['Cari Meister']
+Type:BOOK
+Title:Beverly Cleary
+ISBN:9781577654803
+Year:2001
+Publisher:ABDO
+Author:['David A. Adler']
+Type:BOOK
+Title:Enemies Of Slavery
+ISBN:9780439728201
+Year:2005
+Publisher:
+Author:['Stephanie Cohen', 'Houghton Mifflin Company']
+Type:BOOK
+Title:Joseph Brant
+ISBN:9780618295319
+Year:2004
+Publisher:
+Author:['Rosalyn Schanzer']
+Type:BOOK
+Title:How We Crossed The West
+ISBN:9780792237389
+Year:1997
+Publisher:National Geographic Soc Childrens books
+Author:['Judy Donnelly']
+Type:BOOK
+Title:Tut's Mummy Lost-- And Found
+ISBN:9780394891897
+Year:1988
+Publisher:Random House Books for Young Readers
+Author:['Coleen Degnan-Veness']
+Type:BOOK
+Title:Martin Luther King
+ISBN:9781405881944
+Year:2008
+Publisher:Longman
+Author:['Bernard Smith']
+Type:BOOK
+Title:Muhammad Ali
+ISBN:9781405881531
+Year:2008
+Publisher:Penguin Longman
+Author:['Coleen Degnan-Veness']
+Type:BOOK
+Title:Barack Obama
+ISBN:9781408231654
+Year:2011
+Publisher:Allyn & Bacon
+Author:['Frank Greenaway']
+Type:BOOK
+Title:Wildlife Photographer
+ISBN:9780765252425
+Year:2004
+Publisher:Celebration Press (NJ)
+Author:['Sandra Markle']
+Type:BOOK
+Title:Animals Charles Darwin Saw
+ISBN:9780811850490
+Year:2009
+Publisher:Chronicle Books Llc
+Author:['Jane Sutcliffe']
+Type:BOOK
+Title:Milton Hershey
+ISBN:9780760739112
+Year:2003
+Publisher:
+Author:['Margaret Nevinski']
+Type:BOOK
+Title:Ruby Bridges/SSN/H
+ISBN:9780322030787
+Year:2000
+Publisher:
+Author:['Robert Coles']
+Type:BOOK
+Title:The Story Of Ruby Bridges
+ISBN:9780590572811
+Year:1995
+Publisher:Scholastic Press
+Author:['David Lee Harrison']
+Type:BOOK
+Title:Johnny Appleseed
+ISBN:9780375812477
+Year:2001
+Publisher:Golden Books
+Author:['Mayra Fernández']
+Type:BOOK
+Title:Miriam Colon, Actor And Theater Founder
+ISBN:9780813652719
+Year:1994
+Publisher:
+Author:['Alex Rivas']
+Type:BOOK
+Title:Martha Graham
+ISBN:9780618287833
+Year:2004
+Publisher:
+Author:['Jennifer Fosberry']
+Type:BOOK
+Title:My Name Is Not Isabella
+ISBN:9780545397292
+Year:2011
+Publisher:
+Author:['Elizabeth MacLeod']
+Type:BOOK
+Title:Helen Keller
+ISBN:9781553375098
+Year:2004
+Publisher:
+Author:['Philip Dray']
+Type:BOOK
+Title:Yours For Justice, Ida B. Wells
+ISBN:9781561454174
+Year:2008
+Publisher:Peachtree Publishers
+Author:['Tanya Lee Stone']
+Type:BOOK
+Title:Who Says Women Can't Be Computer Programmers?
+ISBN:9781627792998
+Year:2018
+Publisher:Henry Holt and Company (BYR)
+Author:['Simon Adams']
+Type:BOOK
+Title:Alexander
+ISBN:9781426314490
+Year:2013
+Publisher:National Geographic Children's Books
+Author:['David A. Adler']
+Type:BOOK
+Title:A Picture Book Of Jesse Owens
+ISBN:9780590494397
+Year:1993
+Publisher:
+Author:['Michael E. Goodman']
+Type:BOOK
+Title:Famous Athletes
+ISBN:9781561567102
+Year:1999
+Publisher:
+Author:['Maryum Ali']
+Type:BOOK
+Title:I Shook Up The World
+ISBN:9780836840988
+Year:2003
+Publisher:Gareth Stevens Pub
+Author:['Barbara Hehner']
+Type:BOOK
+Title:First On The Moon
+ISBN:9780786815388
+Year:2000
+Publisher:Hyperion
+Author:['Patricia Brennan Demuth', 'Who Hq']
+Type:BOOK
+Title:Who Is Bill Gates?
+ISBN:9780448463322
+Year:2013
+Publisher:Penguin
+Author:['James Buckley (Jr.)', 'Who Hq']
+Type:BOOK
+Title:Who Were The Wright Brothers?
+ISBN:9780448479514
+Year:2014
+Publisher:Penguin
+Author:['Kathleen Krull', 'Greg Couch']
+Type:BOOK
+Title:The Boy Who Invented TV
+ISBN:9780375845611
+Year:2009
+Publisher:Alfred a Knopf Incorporated
+Author:['Jacqueline Tourville']
+Type:BOOK
+Title:Albie's First Word
+ISBN:9780307978936
+Year:2014
+Publisher:Schwartz & Wade Books
+Author:['Michael Christopher']
+Type:BOOK
+Title:From Milk To Ice Cream
+ISBN:9780325017037
+Year:2009
+Publisher:
+Author:['Allen Kurzweil']
+Type:BOOK
+Title:Potato Chip Science
+ISBN:9780761148258
+Year:2010
+Publisher:Workman Publishing
+Author:['Jean Marzollo', 'Judith Moffatt']
+Type:BOOK
+Title:I'm A Seed
+ISBN:9780590265867
+Year:1996
+Publisher:Cartwheel Books
+Author:['D. J. Ward']
+Type:BOOK
+Title:What Happens To Our Trash?
+ISBN:9780061687563
+Year:2012
+Publisher:Collins
+Author:['Jen Green', 'Mike Gordon']
+Type:BOOK
+Title:Why Should I Recycle?
+ISBN:9780764131554
+Year:2005
+Publisher:Barrons Juveniles
+Author:['Anita Ganeri']
+Type:BOOK
+Title:Earthquakes And Volcanos
+ISBN:9781609960872
+Year:2011
+Publisher:American Education Publishing
+Author:['Kathy Wilmore']
+Type:BOOK
+Title:Exploring Weather
+ISBN:9781561568925
+Year:2000
+Publisher:
+Author:['Stephen Kramer']
+Type:BOOK
+Title:Lightning
+ISBN:9780876146170
+Year:1993
+Publisher:First Avenue Editions
+Author:['Lynda DeWitt']
+Type:BOOK
+Title:What Will The Weather Be?
+ISBN:9780062381989
+Year:2015
+Publisher:HarperCollins
+Author:['Arthur Dorros']
+Type:BOOK
+Title:Follow The Water From Brook To Ocean
+ISBN:9780064451154
+Year:1993
+Publisher:Harper Collins
+Author:['C. Vance Cast']
+Type:BOOK
+Title:Where Does Water Come From?
+ISBN:9780812046427
+Year:1992
+Publisher:Barron's Educational Series
+Author:['']
+Type:BOOK
+Title:A Drop Of Water
+ISBN:9780590221979
+Year:1997
+Publisher:Scholastic
+Author:['Disney Book Group']
+Type:BOOK
+Title:Junior Encyclopedia Of Animated Characters
+ISBN:9781423189145
+Year:2014
+Publisher:Disney Press
+Author:['John Grisewood']
+Type:BOOK
+Title:The Kingfisher First Dictionary
+ISBN:9781856975773
+Year:1995
+Publisher:Kingfisher
+Author:['Steve Jenkins', 'Robin Page']
+Type:BOOK
+Title:Time To Sleep
+ISBN:9780547250403
+Year:2011
+Publisher:Houghton Mifflin Harcourt
+Author:['']
+Type:BOOK
+Title:Dogs And Cats
+ISBN:9780618507672
+Year:2007
+Publisher:Houghton Mifflin Books for Children
+Author:['Steve Jenkins', 'Robin Page']
+Type:BOOK
+Title:Time To Eat
+ISBN:9780547250328
+Year:2011
+Publisher:Houghton Mifflin Harcourt
+Author:['Steve Jenkins', 'Robin Page']
+Type:BOOK
+Title:Move!
+ISBN:9780618646371
+Year:2006
+Publisher:Houghton Mifflin Harcourt
+Author:['Bobbie Kalman', 'Jacqueline Langille']
+Type:BOOK
+Title:What Are Food Chains And Webs?
+ISBN:9780865058880
+Year:1998
+Publisher:New York ; Niagara-on-the-Lake, Ont.
+Author:['Melvin Berger', 'Gilda Berger']
+Type:BOOK
+Title:Does It Always Rain In The Rain Forest?
+ISBN:9780439193832
+Year:2001
+Publisher:
+Author:['David Burnie', 'Don E. Wilson']
+Type:BOOK
+Title:Animal
+ISBN:9780789477644
+Year:2001
+Publisher:Dk Pub
+Author:['Barbara Brenner']
+Type:BOOK
+Title:One Small Place In A Tree
+ISBN:9780688171803
+Year:2004
+Publisher:Harper Collins
+Author:['Tara Darling', 'Kathy Darling']
+Type:BOOK
+Title:How To Babysit An Orangutan
+ISBN:9780802784667
+Year:1996
+Publisher:Walker & Company
+Author:['Janet Craig', 'Janet Palazzo-Craig']
+Type:BOOK
+Title:What's Under The Ocean
+ISBN:9780893756536
+Year:1982
+Publisher:Troll Communications
+Author:['Arcturus Publishing Limited', 'Ella Fern', 'Fiona Tulloch', 'Alex Woolf']
+Type:BOOK
+Title:Animal World
+ISBN:9781848371590
+Year:2012
+Publisher:
+Author:['Gerald Legg']
+Type:BOOK
+Title:Monster Animals Factfinders
+ISBN:9780765193179
+Year:1997
+Publisher:Smithmark Pub
+Author:['Kathy Darling']
+Type:BOOK
+Title:Rain Forest Babies
+ISBN:9780590330329
+Year:1996
+Publisher:
+Author:['']
+Type:BOOK
+Title:Eyewitness Books
+ISBN:9780394822587
+Year:1988
+Publisher:
+Author:['']
+Type:BOOK
+Title:Animals Born Alive And Well
+ISBN:9780448018225
+Year:1982
+Publisher:
+Author:['Lee Ann Landstrom', 'Karen Shragg']
+Type:BOOK
+Title:Nature's Yucky
+ISBN:9780878424740
+Year:2003
+Publisher:Mountain Press
+Author:['Comely, Richard', 'Dickie, Alison']
+Type:BOOK
+Title:Questions Kids Ask About Animals
+ISBN:9780717223886
+Year:1988
+Publisher:Grolier]
+Author:['David J. Smith']
+Type:BOOK
+Title:If
+ISBN:9781894786348
+Year:2014
+Publisher:Kids Can Press Ltd
+Author:['Steve Jenkins']
+Type:BOOK
+Title:Just A Second
+ISBN:9780618708963
+Year:2011
+Publisher:Houghton Mifflin Harcourt
+Author:['Margaret Wise Brown']
+Type:BOOK
+Title:J'aime Les Bestioles
+ISBN:9780307261076
+Year:2000
+Publisher:
+Author:['Gail Gibbons']
+Type:BOOK
+Title:Monarch Butterfly
+ISBN:9780439061957
+Year:1999
+Publisher:
+Author:['Donald Stokes', 'Lillian Q. Stokes', 'Lillian', 'Ernest Williams']
+Type:BOOK
+Title:Stokes Butterfly Book
+ISBN:9780316817806
+Year:1991
+Publisher:Little, Brown and Company
+Author:['Jane Brierley']
+Type:BOOK
+Title:It's A Big Big World
+ISBN:9782894290071
+Year:1991
+Publisher:
+Author:['Melvin Berger']
+Type:BOOK
+Title:Ouch!
+ISBN:9780590460705
+Year:1991
+Publisher:
+Author:['Richard Walker']
+Type:BOOK
+Title:The Human Machine
+ISBN:9780199118656
+Year:2008
+Publisher:
+Author:['Laurie Keller']
+Type:BOOK
+Title:Open Wide
+ISBN:9780805061925
+Year:2000
+Publisher:Macmillan
+Author:['William Sears', 'Martha Sears', 'Christie Watts Kelly']
+Type:BOOK
+Title:Eat Healthy, Feel Great
+ISBN:9780316787086
+Year:2002
+Publisher:Little, Brown Books for Young Readers
+Author:['Richard Walker', 'Roy Palmer']
+Type:BOOK
+Title:The Kingfisher First Human Body Encyclopedia
+ISBN:9780753451779
+Year:1999
+Publisher:Kingfisher
+Author:['Luann Colombo', 'Jennifer Fairman', 'Craig Zuckerman']
+Type:BOOK
+Title:Uncover The Human Body
+ISBN:9781571457899
+Year:2003
+Publisher:
+Author:['Alma Flor Ada']
+Type:BOOK
+Title:Gathering The Sun
+ISBN:9780688170677
+Year:2001
+Publisher:Harper Collins
+Author:['Annette LeBox']
+Type:BOOK
+Title:Peace Is An Offering
+ISBN:9780399186707
+Year:2015
+Publisher:
+Author:['Mercè Escardó i Bas']
+Type:BOOK
+Title:Patito Feo
+ISBN:9780811844550
+Year:2004
+Publisher:Chronicle Books
+Author:['Mercè Escardó i Bas']
+Type:BOOK
+Title:The Three Little Pigs/Los Tres Cerditos
+ISBN:9780811850643
+Year:2006
+Publisher:Chronicle Books
+Author:['']
+Type:BOOK
+Title:Hare And The Tortoise, The/La Liebre Y La Tortuga
+ISBN:9780811850582
+Year:2006
+Publisher:Chronicle Books
+Author:['Marta Mata i Garriga', 'Arnal Ballester', 'Marta Mata']
+Type:BOOK
+Title:Goldilocks And The Three Bears/Ricitos De Oro Y Los Tres Osos
+ISBN:9780811818353
+Year:1998
+Publisher:Chronicle Books
+Author:['']
+Type:BOOK
+Title:I Wish You More
+ISBN:9780545835213
+Year:2015
+Publisher:
+Author:['Angela Wilkes', 'John Shackell']
+Type:BOOK
+Title:Spanish For Beginners
+ISBN:9780844276281
+Year:1987
+Publisher:Peter Bedrick Books
+Author:['James Haskins', 'Jim Haskins']
+Type:BOOK
+Title:Count Your Way Through China
+ISBN:9780876144862
+Year:1987
+Publisher:LernerClassroom
+Author:['Elizabeth Dalby', 'Joanne Kirkby', 'Keith Furnival', 'Kirsteen Rogers']
+Type:BOOK
+Title:Introduction To Asia
+ISBN:9780439889827
+Year:2006
+Publisher:
+Author:['Colin Cheong']
+Type:BOOK
+Title:China
+ISBN:9780836816815
+Year:1997
+Publisher:Gareth Stevens Pub
+Author:['Li-Qiong Yu', 'Cheng-Liang Zhu']
+Type:BOOK
+Title:A New Year's Reunion
+ISBN:9780763658816
+Year:2011
+Publisher:Candlewick Press
+Author:['Duncan Searl']
+Type:BOOK
+Title:Sugar And Spice
+ISBN:9781400741205
+Year:2005
+Publisher:
+Author:['Susan Jeffers']
+Type:BOOK
+Title:Brother Eagle, Sister Sky
+ISBN:9780590457729
+Year:1997
+Publisher:
+Author:['Gordon Korman']
+Type:BOOK
+Title:El Insumergible
+ISBN:9780545385008
+Year:2011
+Publisher:
+Author:['Sheila Kelly Welch']
+Type:BOOK
+Title:Little Prince Know-It-All
+ISBN:9780307263018
+Year:1998
+Publisher:
+Author:['']
+Type:BOOK
+Title:The Fox In The Moon
+ISBN:9781563347054
+Year:1996
+Publisher:Hampton Brown Company Incorporated
+Author:['Virginia L. Kroll']
+Type:BOOK
+Title:Pink Paper Swans
+ISBN:9780802850812
+Year:1994
+Publisher:Eerdmans Young Readers
+Author:['Phoebe Gilman']
+Type:BOOK
+Title:Something From Nothing
+ISBN:9780590472814
+Year:1992
+Publisher:
+Author:['Eric A. Kimmel']
+Type:BOOK
+Title:The Chanukkah Guest
+ISBN:9780590451376
+Year:1988
+Publisher:
+Author:['Michele Maria Surat']
+Type:BOOK
+Title:Angel Child, Dragon Child
+ISBN:9780590422710
+Year:1989
+Publisher:Scholastic Paperbacks
+Author:['Deborah Nourse Lattimore']
+Type:BOOK
+Title:Frida Maria
+ISBN:9780153075308
+Year:1994
+Publisher:
+Author:['']
+Type:BOOK
+Title:The Barefoot Book Of Princesses
+ISBN:9781841488851
+Year:2001
+Publisher:
+Author:['David J. Smith']
+Type:BOOK
+Title:If America Were A Village
+ISBN:9781554533442
+Year:2009
+Publisher:Kids Can Press Ltd
+Author:['Patricia Polacco']
+Type:BOOK
+Title:My Ol' Man
+ISBN:9780590897501
+Year:1995
+Publisher:Scholastic
+Author:['Patricia Polacco']
+Type:BOOK
+Title:Just Plain Fancy
+ISBN:9780440409373
+Year:1994
+Publisher:Dragonfly
+Author:['Patricia Polacco']
+Type:BOOK
+Title:Chicken Sunday
+ISBN:9780399221330
+Year:1992
+Publisher:Penguin
+Author:['']
+Type:BOOK
+Title:The Graves Family Goes Camping
+ISBN:9780399243691
+Year:2005
+Publisher:Philomel
+Author:['Patricia Polacco', 'Patricia Lee Gauch']
+Type:BOOK
+Title:The Graves Family
+ISBN:9780399240348
+Year:2003
+Publisher:Philomel
+Author:['Patricia Polacco']
+Type:BOOK
+Title:Thunder Cake
+ISBN:9780399222313
+Year:1990
+Publisher:Penguin
+Author:['Patricia Polacco']
+Type:BOOK
+Title:The Keeping Quilt
+ISBN:9780689844478
+Year:2001
+Publisher:Simon & Schuster/Paula Wiseman Books
+Author:['Patricia Polacco']
+Type:BOOK
+Title:For The Love Of Autumn
+ISBN:9780399245411
+Year:2008
+Publisher:Philomel
+Author:['Melodye Rosales']
+Type:BOOK
+Title:Leola And The Honeybears
+ISBN:9780590383691
+Year:2000
+Publisher:
+Author:['John Steptoe']
+Type:BOOK
+Title:Mufaros Beautiful Daughters
+ISBN:9780590420587
+Year:1988
+Publisher:Scholastic
+Author:['Stephanie Calmenson', 'Denise Brunkus']
+Type:BOOK
+Title:The Principal's New Clothes
+ISBN:9780590418249
+Year:1991
+Publisher:Scholastic
+Author:['Erica Silverman']
+Type:BOOK
+Title:Raisel's Riddle
+ISBN:9780374461997
+Year:2003
+Publisher:Farrar, Straus and Giroux (BYR)
+Author:['Lenore Blegvad']
+Type:BOOK
+Title:Anna Banana And Me
+ISBN:9780395459898
+Year:1989
+Publisher:
+Author:['']
+Type:BOOK
+Title:Little Red Riding Hood
+ISBN:9781472331397
+Year:2015
+Publisher:
+Author:['Lewis Carroll']
+Type:BOOK
+Title:The Walrus And The Carpenter
+ISBN:9780805000719
+Year:1986
+Publisher:Henry Holt Books For Young Readers
+Author:['Terri Cohlene']
+Type:BOOK
+Title:Turquoise Boy
+ISBN:9780816723607
+Year:1996
+Publisher:Troll Communications Llc
+Author:['']
+Type:BOOK
+Title:Child Of The Sun
+ISBN:9780816737482
+Year:1995
+Publisher:Troll Communications Llc
+Author:['']
+Type:BOOK
+Title:Sergei Prokofiev's Peter And The Wolf
+ISBN:9780375824302
+Year:2004
+Publisher:Knopf Books for Young Readers
+Author:['Caryn Hart']
+Type:BOOK
+Title:The Three Little Pigs And The Big Bad Wolf
+ISBN:9780545480109
+Year:2012
+Publisher:
+Author:['']
+Type:BOOK
+Title:The Gingerbread Man
+ISBN:9780590410564
+Year:1985
+Publisher:Scholastic Paperbacks
+Author:['Arnold Lobel']
+Type:BOOK
+Title:Fables
+ISBN:9780064430463
+Year:1983
+Publisher:Harper Collins
+Author:['Arnold Lobel']
+Type:BOOK
+Title:Fables
+ISBN:9780064430463
+Year:1983
+Publisher:Harper Collins
+
+Author:['Ann McGovern']
+Type:BOOK
+Author:['']
+Type:BOOK
+Title:The Little Red Hen
+ISBN:9780590411455
+Year:1985
+Publisher:Scholastic
+Author:['Jon Scieszka']
+Type:BOOK
+Title:The True Story Of The 3 Little Pigs
+ISBN:9780140544510
+Year:1996
+Publisher:Penguin
+Author:['Laurence Yep']
+Type:BOOK
+Title:The Dragon Prince
+ISBN:9780064435185
+Year:1999
+Publisher:Harper Collins
+Author:['Steven Kellogg']
+Type:BOOK
+Title:Jack And The Beanstalk
+ISBN:9780688152819
+Year:1997
+Publisher:HarperCollins
+Author:['Gail Carson Levine']
+Type:BOOK
+Title:Fairest
+ISBN:9780545111768
+Year:2006
+Publisher:
+Author:['Marjorie Priceman']
+Type:BOOK
+Title:How To Make An Apple Pie And See The World
+ISBN:9780679837053
+Year:1996
+Publisher:Dragonfly Books
+Author:['Eve Bunting']
+Type:BOOK
+Title:How Many Days To America?
+ISBN:9780395547779
+Year:1990
+Publisher:Houghton Mifflin Harcourt
+Author:['Eve Bunting']
+Type:BOOK
+Title:Sixth-Grade Sleepover
+ISBN:9780152753504
+Year:1986
+Publisher:Harcourt Childrens Books
+Author:['Eve Bunting']
+Type:BOOK
+Title:The Memory String
+ISBN:9780544555471
+Year:2015
+Publisher:HMH Books For Young Readers
+Author:['Eve Bunting']
+Type:BOOK
+Title:Dandelions
+ISBN:9780152024079
+Year:2001
+Publisher:Houghton Mifflin Harcourt
+Author:['Eve Bunting']
+Type:BOOK
+Title:In The Haunted House
+ISBN:9780395699423
+Year:1994
+Publisher:Houghton Mifflin Harcourt
+Author:['Eve Bunting']
+Type:BOOK
+Title:The Wall
+ISBN:9780395515884
+Year:1990
+Publisher:Houghton Mifflin Harcourt
 Author:['Eve Bunting']
 Type:BOOK
 Title:Swan In Love
 ISBN:9780689820809
 Year:2000
 Publisher:Atheneum
+Author:['Christopher Maynard']
+Type:BOOK
+Title:Incredible Clothes
+ISBN:9781564589583
+Year:1995
+Publisher:DK Publishing (Dorling Kindersley)
+Author:['Ann Armbruster']
+Type:BOOK
+Title:Lake Huron
+ISBN:9780516261034
+Year:1997
+Publisher:Children's Press
+Author:['Alice Walker']
+Type:BOOK
+Title:Why War Is Never A Good Idea
+ISBN:9780060753856
+Year:2007
+Publisher:Harper Collins
+Author:['Janis Silverman']
+Type:BOOK
+Title:Help Me Say Goodbye
+ISBN:9781577490852
+Year:1999
+Publisher:
+Author:['Tracey Boraas']
+Type:BOOK
+Title:TV Reporters
+ISBN:9780736800754
+Year:1998
+Publisher:Capstone
+Author:['Diane Hoyt-Goldsmith']
+Type:BOOK
+Title:Celebrating a Quinceañera
+ISBN:9780823416936
+Year:2002
+Publisher:
+Author:['William Lubber', 'Dugald Steer']
+Type:BOOK
+Title:Pirateology, Guidebook And Model Set
+ISBN:9780763635824
+Year:2007
+Publisher:Candlewick Press (MA)
+Author:['Kathryn Lasky']
+Type:BOOK
+Title:Two Bad Pilgrims
+ISBN:9780670061686
+Year:2009
+Publisher:Viking Childrens Books
+Author:['Eve Bunting']
+Type:BOOK
+Title:So Far From The Sea
+ISBN:9780395720950
+Year:1998
+Publisher:Houghton Mifflin Harcourt
+Author:['']
+Type:BOOK
+Title:Angel Girl
+ISBN:9780822587392
+Year:2008
+Publisher:Carolrhoda Books
+Author:['Betsy Maestro', 'Susannah Ryan']
+Type:BOOK
+Title:Coming To America
+ISBN:9780590441513
+Year:1996
+Publisher:Scholastic Inc.
+Author:['Calvin A. Ramsey', 'Gwen Strauss']
+Type:BOOK
+Title:Ruth And The Green Book
+ISBN:9780761352556
+Year:2010
+Publisher:Carolrhoda Books
+Author:['Mary Kay Carson']
+Type:BOOK
+Title:Which Way To Freedom?
+ISBN:9781454907848
+Year:2015
+Publisher:Sterling Publishing Company Incorporated
+Author:['']
+Type:BOOK
+Title:Unspoken
+ISBN:9780545399975
+Year:2012
+Publisher:
+Author:['David C. King']
+Type:BOOK
+Title:The Battle Of Vicksburg
+ISBN:9781567115529
+Year:2001
+Publisher:Blackbirch PressInc
+Author:['Dale Anderson']
+Type:BOOK
+Title:Lexington And Concord, April 19, 1775
+ISBN:9781592700271
+Year:2004
+Publisher:Enchanted Lion Books
+Author:['Stephen Krensky']
+Type:BOOK
+Title:Striking It Rich
+ISBN:9780689808043
+Year:1996
+Publisher:Simon & Schuster
+Author:['John Perritano']
+Type:BOOK
+Title:D-Day
+ISBN:9789381087275
+Year:2014
+Publisher:
+Author:['Becky Cheston', 'Cedric Lucas (ill)', 'Houghton Mifflin Company']
+Type:BOOK
+Title:Earthquake Alaska, 1964
+ISBN:9780618294787
+Year:2004
+Publisher:
+Author:['Hsp']
+Type:BOOK
+Title:Gold Fever, On Level Reader States And Regions
+ISBN:9780153528521
+Year:2005
+Publisher:
+Author:['Bobbie Kalman']
+Type:BOOK
+Title:Early Schools
+ISBN:9780865050143
+Year:1991
+Publisher:Crabtree Pub.
+Author:['Glòria Vergés', 'Maria Rius', 'Oriol Vergés']
+Type:BOOK
+Title:The Renaissance
+ISBN:9780812033960
+Year:1988
+Publisher:Barron's Educational Series
+Author:['Myron Uhlberg']
+Type:BOOK
+Title:A Storm Called Katrina
+ISBN:9781561455911
+Year:2011
+Publisher:Peachtree Publ
+Author:['Eric Kentley']
+Type:BOOK
+Title:Discover The Titanic
+ISBN:9780789420206
+Year:1997
+Publisher:DK Publishing (Dorling Kindersley)
+Author:['Linda Skeers']
+Type:BOOK
+Title:The Impossible Patriotism Project
+ISBN:9780803731387
+Year:2007
+Publisher:Dial
+Author:['Judith George']
+Type:BOOK
+Title:So You Want To Be President
+ISBN:9780439317566
+Year:
+Publisher:
+Author:['Marilyn Singer']
+Type:BOOK
+Title:Rutherford B., Who Was He?
+ISBN:9781423171003
+Year:2013
+Publisher:Disney-Hyperion
+Author:['Mac Barnett']
+Type:BOOK
+Title:President Taft Is Stuck In The Bath
+ISBN:9780763663179
+Year:2014
+Publisher:Candlewick Press (MA)
+Author:['Lauren Tarshis']
+Type:BOOK
+Title:I Survived The American Revolution, 1776 (I Survived #15)
+ISBN:9780545919739
+Year:2017
+Publisher:Scholastic Paperbacks
+Author:['Lauren Tarshis']
+Type:BOOK
+Title:I Survived The Attacks Of September 11, 2001
+ISBN:9780545207003
+Year:2012
+Publisher:Scholastic Paperbacks
+Author:['Lauren Tarshis']
+Type:BOOK
+Title:I Survived True Stories
+ISBN:9780545794701
+Year:2014
+Publisher:
+Author:['']
+Type:BOOK
+Title:Da Vinci
+ISBN:9780516422756
+Year:1989
+Publisher:Children's Press
+Author:['']
+Type:BOOK
+Title:Van Gogh
+ISBN:9780516422749
+Year:1989
+Publisher:Children's Press
+Author:['Megan McDonald']
+Type:BOOK
+Title:Judy Moody
+ISBN:9781536200713
+Year:2018
+Publisher:Candlewick Press
+Author:['Megan McDonald', 'Peter Reynolds']
+Type:BOOK
+Title:Stink
+ISBN:9780763628918
+Year:2006
+Publisher:Candlewick Press
+Author:['Louis Sachar']
+Type:BOOK
+Title:Wayside School Is Falling Down
+ISBN:9780380754847
+Year:1990
+Publisher:Harper Collins
+Author:['Louis Sachar']
+Type:BOOK
+Title:Holes
+ISBN:9780440419464
+Year:2003
+Publisher:Yearling Books
+Author:['Louis Sachar']
+Type:BOOK
+Title:Holes
+ISBN:9780440419464
+Year:2003
+Publisher:Yearling Books
+Author:['Andrew Clements']
+Type:BOOK
+Title:Frindle
+ISBN:9780439607278
+Year:1996
+Publisher:
+Author:['Andrew Clements']
+Type:BOOK
+Title:Things Hoped For
+ISBN:9780545036832
+Year:2006
+Publisher:
+Author:['Andrew Clements']
+Type:BOOK
+Title:Troublemaker
+ISBN:9781416949305
+Year:2011
+Publisher:Simon and Schuster
+Author:['Roald Dahl']
+Type:BOOK
+Title:The Bfg
+ISBN:9780142410387
+Year:2007
+Publisher:PUFFIN BOOKS
+Author:['Roald Dahl']
+Type:BOOK
+Title:The Magic Finger
+ISBN:9780590132053
+Year:1996
+Publisher:
+Author:['Roald Dahl']
+Type:BOOK
+Title:Esio Trot
+ISBN:9780439177061
+Year:2000
+Publisher:
+Author:['Roald Dahl']
+Type:BOOK
+Title:Esio Trot
+ISBN:9780439177061
+Year:2000
+Publisher:
+Author:['Roald Dahl']
+Type:BOOK
+Title:The Witches
+ISBN:9780590032490
+Year:1997
+Publisher:
+Author:['Judy Blume']
+Type:BOOK
+Title:Fudge-A-Mania
+ISBN:9780439559850
+Year:2003
+Publisher:
+Author:['Judy Blume']
+Type:BOOK
+Title:Tales Of A Fourth Grade Nothing
+ISBN:9780439559867
+Year:2003
+Publisher:
+Author:['Judy Blume']
+Type:BOOK
+Title:Starring Sally J. Freedman As Herself
+ISBN:9780440482536
+Year:1977
+Publisher:Yearling Books
+Author:['Judy Blume']
+Type:BOOK
+Title:Starring Sally J. Freedman As Herself
+ISBN:9780440407072
+Year:1974
+Publisher:
+Author:['Aliki']
+Type:BOOK
+Title:Marianthe's Story
+ISBN:9780688156619
+Year:1998
+Publisher:Harper Collins
+Author:['Raymond Bial']
+Type:BOOK
+Title:The Strength Of These Arms
+ISBN:9780395773949
+Year:1997
+Publisher:Houghton Mifflin Harcourt
+Author:['Tony Johnston']
+Type:BOOK
+Title:Sunsets Of The West
+ISBN:9780399226595
+Year:2002
+Publisher:Putnam Juvenile
+Author:['Paul Erickson']
+Type:BOOK
+Title:Daily Life In A Covered Wagon
+ISBN:9780891332459
+Year:1994
+Publisher:
+Author:['Dawn FitzGerald']
+Type:BOOK
+Title:Vinnie And Abraham
+ISBN:9781570916588
+Year:2007
+Publisher:Charlesbridge Publishing
+Author:['Leah Wilcox']
+Type:BOOK
+Title:Falling For Rapunzel
+ISBN:9780399237942
+Year:2003
+Publisher:Penguin
+Author:['George Ella Lyon']
+Type:BOOK
+Title:You And Me And Home Sweet Home
+ISBN:9780689875892
+Year:2009
+Publisher:Atheneum/Richard Jackson Books
+Author:['Patricia Lakin']
+Type:BOOK
+Title:Don't Forget
+ISBN:9780688120757
+Year:1994
+Publisher:Tambourine
+Author:['Virginia Kroll', 'Tim Ladwig']
+Type:BOOK
+Title:Especially Heroes
+ISBN:9780802852212
+Year:2003
+Publisher:Taylor & Francis US
+Author:['Jeff Brown']
+Type:BOOK
+Title:Flat Stanley
+ISBN:9780060097912
+Year:2010
+Publisher:Harper Collins
+Author:['Jane Shuter', 'Jo Brooker']
+Type:BOOK
+Title:How To Make Masks
+ISBN:9780763567880
+Year:2000
+Publisher:
+Author:['Cynthia Rylant']
+Type:BOOK
+Title:Henry And Mudge And The Wild Wind
+ISBN:9780689808388
+Year:1996
+Publisher:Simon and Schuster
+Author:['Arnold Lobel']
+Type:BOOK
+Title:Frog And Toad Are Friends
+ISBN:9780064440202
+Year:1979
+Publisher:HarperCollins
+Author:['John Peterson']
+Type:BOOK
+Title:The Littles Take A Trip
+ISBN:9780590462228
+Year:1968
+Publisher:Scholastic Paperbacks
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club 5
+ISBN:9780061124372
+Year:2007
+Publisher:Harper Collins
+Author:['Sally Senzell Isaacs']
+Type:BOOK
+Title:Pocahontas
+ISBN:9781575729367
+Year:1998
+Publisher:Capstone Classroom
+Author:['Mary Jo Rhodes', 'David Hall']
+Type:BOOK
+Title:Sea Turtles
+ISBN:9780516253534
+Year:2006
+Publisher:Childrens Press
+Author:['Gloria Houston']
+Type:BOOK
+Title:My Great-Aunt Arizona
+ISBN:9780064433747
+Year:1997
+Publisher:Harper Collins
+Author:['Alice McLerran']
+Type:BOOK
+Title:Roxaboxen
+ISBN:9780688075927
+Year:1991
+Publisher:Harper Collins
+Author:['Phyllis Reynolds Naylor']
+Type:BOOK
+Title:Shiloh
+ISBN:9780545702775
+Year:2014
+Publisher:
+Author:['Gertrude Chandler Warner']
+Type:BOOK
+Title:The Haunted Clock Tower Mystery (The Boxcar Children Mysteries #84)
+ISBN:9780807554852
+Year:2001
+Publisher:Albert Whitman and Company
+Author:['John Peterson']
+Type:BOOK
+Title:The Littles Go To School
+ISBN:9780590421294
+Year:1994
+Publisher:Scholastic Paperbacks
+Author:['Jeanne Betancourt']
+Type:BOOK
+Title:Pony-Sitters
+ISBN:9780590866019
+Year:1997
+Publisher:Scholastic Inc.
+Author:['Kate Messner']
+Type:BOOK
+Title:Rescue On The Oregon Trail
+ISBN:9781338347845
+Year:2015
+Publisher:
+Author:['Liyala Tuckfield']
+Type:BOOK
+Title:How To Make A Bird Feeder
+ISBN:9780763560898
+Year:2000
+Publisher:Rigby
+Author:['Gerald G. Duffy']
+Type:BOOK
+Title:Explaining Reading
+ISBN:9781572308770
+Year:2003
+Publisher:Guilford Press
+Author:['Judy Blume']
+Type:BOOK
+Title:Freckle Juice
+ISBN:9780440428138
+Year:1986
+Publisher:Yearling Books
+Author:['Rafe Esquith']
+Type:BOOK
+Title:Teach Like Your Hair's On Fire
+ISBN:9780670038152
+Year:2007
+Publisher:Penguin
+Author:['John Peterson']
+Type:BOOK
+Title:The Littles To The Rescue
+ISBN:9780590462235
+Year:1993
+Publisher:Scholastic Paperbacks
+Author:['Mary Pope Osborne']
+Type:BOOK
+Title:A Ghost Tale For Christmas Time
+ISBN:9780545543668
+Year:2010
+Publisher:
+Author:['Ron Roy']
+Type:BOOK
+Title:The Invisible Island
+ISBN:9780439326827
+Year:1999
+Publisher:
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club 6
+ISBN:9780061124365
+Year:2007
+Publisher:Harper Collins
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club At Silver Towers 9
+ISBN:9780061124457
+Year:2007
+Publisher:Harper Collins
+Author:['Angelica Banks']
+Type:BOOK
+Title:Finding Serendipity
+ISBN:9780545930734
+Year:2015
+Publisher:
+Author:['Aaron Blabey']
+Type:BOOK
+Title:The Bad Guys
+ISBN:9780545912402
+Year:2016
+Publisher:
+Author:['Aaron Blabey']
+Type:BOOK
+Title:The Bad Guys Guide To Being Good
+ISBN:9781338208245
+Year:2017
+Publisher:
+Author:['J. K. Rowling']
+Type:BOOK
+Title:Harry Potter And The Sorcerer's Stone
+ISBN:9780590353427
+Year:1998
+Publisher:Scholastic Paperbacks
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Running Out Of Time
+ISBN:9780689812361
+Year:1997
+Publisher:Simon & Schuster Books for Young Readers
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Among The Impostors
+ISBN:9780689839085
+Year:2002
+Publisher:Simon & Schuster Books for Young Readers
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Palace Of Mirrors
+ISBN:9781442406674
+Year:2010
+Publisher:Simon and Schuster
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Double Identity
+ISBN:9780689873799
+Year:2007
+Publisher:Simon and Schuster
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Among The Betrayed
+ISBN:9780689839054
+Year:2002
+Publisher:Simon and Schuster
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Torn
+ISBN:9780545386449
+Year:2011
+Publisher:
+Author:['J. K. Rowling']
+Type:BOOK
+Title:Harry Potter And The Chamber Of Secrets
+ISBN:9781551922447
+Year:1999
+Publisher:Raincoast Books
+Author:['Raina Telgemeier']
+Type:BOOK
+Title:Smile
+ISBN:9780545132060
+Year:2010
+Publisher:
+Author:['J. K. Rowling']
+Type:BOOK
+Title:Harry Potter And The Sorcerer's Stone
+ISBN:9780590353427
+Year:1998
+Publisher:Scholastic Paperbacks
+Author:['Chris Van Allsburg']
+Type:BOOK
+Title:The Mysteries Of Harris Burdick
+ISBN:9780395353936
+Year:1984
+Publisher:Houghton Mifflin Harcourt
+Author:['David A. Adler']
+Type:BOOK
+Title:Young Cam Jansen And The Missing Cookie
+ISBN:9780439227063
+Year:1996
+Publisher:
+Author:['David A. Adler']
+Type:BOOK
+Title:Young Cam Jansen And The Library Mystery
+ISBN:9780439489164
+Year:2002
+Publisher:
+Author:['Peggy Parish']
+Type:BOOK
+Title:Come Back, Amelia Bedelia
+ISBN:9780064442046
+Year:1995
+Publisher:Harper Collins
+Author:['Peggy Parish']
+Type:BOOK
+Title:Play Ball, Amelia Bedelia
+ISBN:9780064442053
+Year:1995
+Publisher:Harper Collins
+Author:['Peggy Parish']
+Type:BOOK
+Title:Teach Us, Amelia Bedelia
+ISBN:9780590537735
+Year:1995
+Publisher:SCHOLASTIC
+Author:['Vera B. Williams']
+Type:BOOK
+Title:A Chair For My Mother
+ISBN:9780590331555
+Year:1982
+Publisher:Scholastic Incorporated
+Author:['']
+Type:BOOK
+Title:Rosie's Walk
+ISBN:9781416908357
+Year:2005
+Publisher:Aladdin
+Author:['Leo Lionni']
+Type:BOOK
+Title:Swimmy
+ISBN:9780394817132
+Year:1963
+Publisher:Knopf Books for Young Readers
+Author:['Leo Lionni']
+Type:BOOK
+Title:Alexander And The Wind-Up Mouse
+ISBN:9780590430128
+Year:1989
+Publisher:
+Author:['Marcus Pfister']
+Type:BOOK
+Title:The Rainbow Fish
+ISBN:9781558580091
+Year:1992
+Publisher:Simon and Schuster
+Author:['Shel Silverstein']
+Type:BOOK
+Title:The Giving Tree
+ISBN:9780060256654
+Year:1964
+Publisher:HarperCollins
+Author:['Patricia MacLachlan']
+Type:BOOK
+Title:Three Names
+ISBN:9780064433600
+Year:1994
+Publisher:Harper Collins
+Author:['Patricia MacLachlan']
+Type:BOOK
+Title:All The Places To Love
+ISBN:9780060210984
+Year:1994
+Publisher:Harper Collins
+Author:['Kathleen M. Hollenbeck']
+Type:BOOK
+Title:Teaching With Favorite Leo Lionni Books
+ISBN:9780439043885
+Year:1999
+Publisher:Scholastic Inc.
+Author:['Jane Yolen', 'John Schoenherr']
+Type:BOOK
+Title:Owl Moon
+ISBN:9780590420440
+Year:1988
+Publisher:Scholastic Paperbacks
+Author:['Tiffany Strelitz Haber']
+Type:BOOK
+Title:The Monster Who Lost His Mean
+ISBN:9780545649865
+Year:2012
+Publisher:
+Author:['Ed Young']
+Type:BOOK
+Title:Seven Blind Mice
+ISBN:9780590469715
+Year:1993
+Publisher:
+Author:['Robert Lopshire']
+Type:BOOK
+Title:Put Me In The Zoo
+ISBN:9780375875205
+Year:1960
+Publisher:
+Author:['Helen Lester', 'Lynn Munsinger']
+Type:BOOK
+Title:Tacky The Penguin
+ISBN:9780395562338
+Year:1988
+Publisher:Houghton Mifflin Harcourt
+Author:['Helen Lester']
+Type:BOOK
+Title:Hooway For Wodney Wat
+ISBN:9780439200875
+Year:2000
+Publisher:
+Author:['Laurie Keller']
+Type:BOOK
+Title:The Scrambled States Of America
+ISBN:9780805068313
+Year:2002
+Publisher:Macmillan
+Author:['Judith Viorst']
+Type:BOOK
+Title:Alexander And The Terrible, Horrible, No Good, Very Bad Day
+ISBN:9780689711732
+Year:1987
+Publisher:Atheneum Books for Young Readers
+Author:['Simms Taback']
+Type:BOOK
+Title:There Was An Old Lady Who Swallowed A Fly
+ISBN:9780590632645
+Year:1997
+Publisher:
+Author:['Daniel Manus Pinkwater']
+Type:BOOK
+Title:The Big Orange Splot
+ISBN:9780590445108
+Year:1977
+Publisher:Scholastic Paperbacks
+Author:['Maurice Sendak']
+Type:BOOK
+Title:Where The Wild Things Are
+ISBN:9780064431781
+Year:1988
+Publisher:Harper Collins
+Author:['Mike Thaler']
+Type:BOOK
+Title:The Book Report From The Black Lagoon
+ISBN:9780545290463
+Year:2010
+Publisher:
+Author:['Jan Brett']
+Type:BOOK
+Title:Fritz And The Beautiful Horses
+ISBN:9780440843993
+Year:1992
+Publisher:
+Author:['Celia Bland']
+Type:BOOK
+Title:Arts And Entertainment
+ISBN:9781561567119
+Year:1999
+Publisher:
+Author:['Tracey E. Dils']
+Type:BOOK
+Title:Big, Bad Bugs
+ISBN:9780874068474
+Year:1997
+Publisher:Worthington Pr
+Author:['Susan Canizares']
+Type:BOOK
+Title:Butterfly
+ISBN:9780590761604
+Year:1998
+Publisher:Scholastic Teaching Resources
+Author:['']
+Type:BOOK
+Title:Corduroy
+ISBN:9780140501735
+Year:1968
+Publisher:Puffin
+Author:['Linda Williams']
+Type:BOOK
+Title:The Little Old Lady Who Was Not Afraid Of Anything
+ISBN:9780064431835
+Year:1988
+Publisher:Harper Collins
+Author:['Gail Gibbons']
+Type:BOOK
+Title:Thanksgiving Day
+ISBN:9780590467667
+Year:1983
+Publisher:Scholastic Incorporated
+Author:['Ann McGovern', 'Elroy Freem']
+Type:BOOK
+Title:The Pilgrims' First Thanksgiving
+ISBN:9780590461887
+Year:1993
+Publisher:Scholastic Inc.
+Author:['Eve Bunting']
+Type:BOOK
+Title:St. Patrick's Day In The Morning
+ISBN:9780899191621
+Year:1983
+Publisher:Houghton Mifflin Harcourt
+Author:['']
+Type:BOOK
+Title:Thanksgiving
+ISBN:9780399219917
+Year:
+Publisher:
+Author:['Philip Yates']
+Type:BOOK
+Title:Ten Little Mummies
+ISBN:9780439680691
+Year:2004
+Publisher:
+Author:['Katherine Tegen']
+Type:BOOK
+Title:The Story Of The Easter Bunny
+ISBN:9780060507114
+Year:2005
+Publisher:Harper Collins
+Author:['Mary Engelbreit']
+Type:BOOK
+Title:Queen Of Hearts
+ISBN:9780060081836
+Year:2008
+Publisher:HarperCollins
+Author:['Susanna Leonard Hill']
+Type:BOOK
+Title:Wake Up, Groundhog!
+ISBN:9780439842167
+Year:2006
+Publisher:
+Author:['Melrose Cooper']
+Type:BOOK
+Title:Gettin' Through Thursday
+ISBN:9781880000670
+Year:1998
+Publisher:
+Author:['Edwin Carter Galbreath']
+Type:BOOK
+Title:A New Species Of Heteromyid Rodent From The Middle Oligocene Of Northeast Colorado With Remarks On The Skull
+ISBN:9780395533086
+Year:1948
+Publisher:
+Author:['David Bedford']
+Type:BOOK
+Title:Once Upon A Time... Online
+ISBN:9781527018082
+Year:2018
+Publisher:
+Author:['Sharon Creech']
+Type:BOOK
+Title:Walk Two Moons
+ISBN:9780064405171
+Year:1996
+Publisher:Harper Collins
+Author:['Christopher Paul Curtis']
+Type:BOOK
+Title:Bud, Not Buddy
+ISBN:9780385323062
+Year:1999
+Publisher:Delacorte Books for Young Readers
+Author:['Margaret Peterson Haddix']
+Type:BOOK
+Title:Among The Hidden
+ISBN:9780689824753
+Year:2000
+Publisher:Simon & Schuster Books for Young Readers
+Author:['Nicholas Harris']
+Type:BOOK
+Title:Diary Of A Pirate Voyage
+ISBN:9780764162091
+Year:2009
+Publisher:
+Author:["Jane O'Connor"]
+Type:BOOK
+Title:Fancy Nancy And The Boy From Paris
+ISBN:9780061236099
+Year:2008
+Publisher:Harper Collins
+Author:['Helen Lester']
+Type:BOOK
+Title:Tackylocks And The Three Bears
+ISBN:9780618439539
+Year:2004
+Publisher:Houghton Mifflin Harcourt
+Author:['Harry Allard', 'James Marshall']
+Type:BOOK
+Title:Miss Nelson Is Missing!
+ISBN:9780395401460
+Year:1977
+Publisher:Houghton Mifflin Harcourt
+Author:['Esphyr Slobodkina']
+Type:BOOK
+Title:Caps For Sale
+ISBN:9780064431439
+Year:1987
+Publisher:Harper Collins
+Author:['Judith Viorst']
+Type:BOOK
+Title:Alexander y el día terrible, horrible, espantoso, horroroso
+ISBN:9780590465663
+Year:1992
+Publisher:
+Author:['']
+Type:BOOK
+Title:The Berenstain Bears And Too Much Junk Food
+ISBN:9780394872179
+Year:1985
+Publisher:Random House Books for Young Readers
+Author:['Ron Roy']
+Type:BOOK
+Title:The Jaguar's Jewel
+ISBN:9780439326834
+Year:2000
+Publisher:
+Author:['Drew Daywalt']
+Type:BOOK
+Title:The Day The Crayons Quit
+ISBN:9780399255373
+Year:2013
+Publisher:Penguin
+Author:['Roni Schotter']
+Type:BOOK
+Title:The Boy Who Loved Words
+ISBN:9780375836015
+Year:2006
+Publisher:
+Author:['Kevin Henkes']
+Type:BOOK
+Title:Chrysanthemum
+ISBN:9780590135658
+Year:1991
+Publisher:
+Author:['Mike Thaler']
+Type:BOOK
+Title:The Principal From The Black Lagoon
+ISBN:9780590457828
+Year:1993
+Publisher:Scholastic Paperbacks
+Author:['Barbara Ensor']
+Type:BOOK
+Title:Cinderella (As If You Didn't Already Know The Story)
+ISBN:9780375836206
+Year:2006
+Publisher:Random House Digital, Inc.
+Author:['Dr. Seuss']
+Type:BOOK
+Title:The Lorax
+ISBN:9780394823379
+Year:1971
+Publisher:Random House Books for Young Readers
+Author:['Jennifer Fosberry', 'Mike Litwin']
+Type:BOOK
+Title:Isabella, Star Of The Story
+ISBN:9781402279362
+Year:2013
+Publisher:
+Author:['Judy Finchler']
+Type:BOOK
+Title:Testing Miss Malarkey
+ISBN:9780439329651
+Year:2000
+Publisher:
+Author:['Jon Scieszka', 'Lane Smith']
+Type:BOOK
+Title:Seen Art?
+ISBN:9780670059867
+Year:2005
+Publisher:Viking Children's Books
+Author:['Judy Finchler']
+Type:BOOK
+Title:Miss Malarkey Doesn't Live In Room 10
+ISBN:9780802783875
+Year:1995
+Publisher:Walker Childrens
+Author:['Stan Berenstain', 'Jan Berenstain']
+Type:BOOK
+Title:The Berenstain Bears And Too Much Vacation
+ISBN:9780394830148
+Year:1989
+Publisher:Random House Books for Young Readers
+Author:['']
+Type:BOOK
+Title:The Berenstain Bears And The Messy Room
+ISBN:9780394856391
+Year:1983
+Publisher:Random House Books for Young Readers
+Author:['Jerry Spinelli']
+Type:BOOK
+Title:Wringer
+ISBN:9780064405782
+Year:1998
+Publisher:Harper Collins
+Author:['Jerry Spinelli']
+Type:BOOK
+Title:Wringer (Summer Reading Edition)
+ISBN:9780060739485
+Year:2004
+Publisher:Harper Collins
+Author:['Jerry Spinelli']
+Type:BOOK
+Title:There's A Girl In My Hammerlock
+ISBN:9781416939375
+Year:2007
+Publisher:Simon and Schuster
+Author:['Jerry Spinelli']
+Type:BOOK
+Title:Crash
+ISBN:9780679885504
+Year:1997
+Publisher:Yearling Books
+Author:['Gary Paulsen']
+Type:BOOK
+Title:Woodsong
+ISBN:9780590450522
+Year:1991
+Publisher:
+Author:['Lois Lowry']
+Type:BOOK
+Title:Gooney Bird Greene
+ISBN:9780440419600
+Year:2004
+Publisher:Yearling Books
+Author:['R. J. Palacio']
+Type:BOOK
+Title:Wonder
+ISBN:9780375869020
+Year:2012
+Publisher:Alfred A. Knopf Books for Young Readers
+Author:['Cynthia Lord']
+Type:BOOK
+Title:Rules
+ISBN:9780439443838
+Year:2008
+Publisher:Scholastic Paperbacks
+Author:['Sharon Creech']
+Type:BOOK
+Title:Love That Dog
+ISBN:9780060292874
+Year:2001
+Publisher:Joanna Cotler Books
+Author:['Raina Telgemeier']
+Type:BOOK
+Title:Smile
+ISBN:9780545241823
+Year:2010
+Publisher:
+Author:['Aaron Blabey']
+Type:BOOK
+Title:The Bad Guys In Mission Unpluckable
+ISBN:9780545912419
+Year:2017
+Publisher:Scholastic Press
+Author:['Catherine Hapka']
+Type:BOOK
+Title:Pearl's Ocean Magic
+ISBN:9780545750240
+Year:2016
+Publisher:Scholastic Paperbacks
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club 2
+ISBN:9780061124303
+Year:2007
+Publisher:Harper Collins
+Author:['Elizabeth Lindsay']
+Type:BOOK
+Title:Nighttime Adventure
+ISBN:9780545576468
+Year:2013
+Publisher:
+Author:['Vivian French']
+Type:BOOK
+Title:The Tiara Club 4
+ISBN:9780061124396
+Year:2007
+Publisher:Harper Collins
+Author:['Paula Harrison']
+Type:BOOK
+Title:The Snow Jewel
+ISBN:9780545509176
+Year:2013
+Publisher:Scholastic Paperbacks
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club 3
+ISBN:9780061124334
+Year:2007
+Publisher:Harper Collins
+Author:['Vivian French', 'Sarah Gibb']
+Type:BOOK
+Title:The Tiara Club 1
+ISBN:9780061124280
+Year:2007
+Publisher:Harper Collins
+Author:['Rebecca Elliott']
+Type:BOOK
+Title:Eva's Treetop Festival
+ISBN:9780545683623
+Year:2015
+Publisher:Scholastic Paperbacks
+Author:['Arthur Ransome', 'Simon Galkin']
+Type:BOOK
+Title:Favorite Russian Fairy Tales
+ISBN:9780486286327
+Year:2011
+Publisher:Courier Corporation
+Author:['Judy Blume']
+Type:BOOK
+Title:Superfudge
+ISBN:9780439559843
+Year:2003
+Publisher:
+Author:['Jacqueline Dembar Greene']
+Type:BOOK
+Title:Candlelight For Rebecca
+ISBN:9781593695828
+Year:2009
+Publisher:Amer Girl Pub
+Author:['Tony Abbott', 'Tim Jessell']
+Type:BOOK
+Title:The Moon Scroll
+ISBN:9780439306089
+Year:2002
+Publisher:Scholastic Paperbacks
+Author:['John Peterson']
+Type:BOOK
+Title:The Littles And Their Amazing New Friend
+ISBN:9780590876124
+Year:1999
+Publisher:Scholastic Paperbacks
+Author:['Sue Bentley', 'Angela Swan']
+Type:BOOK
+Title:Chocolate Wishes
+ISBN:9780448467276
+Year:2013
+Publisher:
+Author:['George Sullivan']
+Type:BOOK
+Title:Lewis And Clark
+ISBN:9780439095532
+Year:2000
+Publisher:Scholastic
+Author:['Paula Harrison']
+Type:BOOK
+Title:The Stolen Crystals
+ISBN:9780545509169
+Year:2013
+Publisher:Scholastic Paperbacks
+Author:['Marci Peschke', 'Tuesday Mourning']
+Type:BOOK
+Title:Kylie Jean Drama Queen
+ISBN:9781404866164
+Year:2010
+Publisher:Capstone
+Author:['David Levinthal']
+Type:BOOK
+Title:Who Pushed Humpty Dumpty?
+ISBN:9780375841958
+Year:2012
+Publisher:Schwartz & Wade Books
+Author:['Sean Covey']
+Type:BOOK
+Title:The 7 Habits Of Happy Kids
+ISBN:9781416957768
+Year:2008
+Publisher:Simon and Schuster
+Author:['W. Rodman Philbrick']
+Type:BOOK
+Title:The Mostly True Adventures Of Homer P. Figg
+ISBN:9780439668187
+Year:2009
+Publisher:Blue Sky Press (AZ)
+Author:['Jon Scieszka']
+Type:BOOK
+Title:Frank Einstein And The BrainTurbo
+ISBN:9781419716430
+Year:2015
+Publisher:Harry N. Abrams
+Author:['Cynthia Rylant']
+Type:BOOK
+Title:A Blue-Eyed Daisy
+ISBN:9780689844959
+Year:2001
+Publisher:Atheneum Books for Young Readers
+Author:['Katherine Applegate']
+Type:BOOK
+Title:Crenshaw
+ISBN:9781250043238
+Year:2015
+Publisher:Macmillan
+Author:['Suzanne Selfors']
+Type:BOOK
+Title:Smells Like Dog
+ISBN:9780316043984
+Year:2010
+Publisher:Little, Brown Books for Young Readers
+Author:['Natalie Lloyd']
+Type:BOOK
+Title:The Key To Extraordinary
+ISBN:9780545552745
+Year:2016
+Publisher:Scholastic Press
+Author:['Kate DiCamillo']
+Type:BOOK
+Title:Thetale Of Despereaux
+ISBN:9780439701662
+Year:2004
+Publisher:
+Author:['Audrey Couloumbis']
+Type:BOOK
+Title:Jake
+ISBN:9780375856303
+Year:2010
+Publisher:Random House Books for Young Readers
+Author:['']
+Type:BOOK
+Title:Savvy
+ISBN:9780803733060
+Year:2008
+Publisher:Dial
+Author:['Deborah Wiles', 'Debbie Wiles']
+Type:BOOK
+Title:Love, Ruby Lavender
+ISBN:9780152023140
+Year:2001
+Publisher:Houghton Mifflin Harcourt
+Author:['Grace Lin']
+Type:BOOK
+Title:The Year Of The Dog
+ISBN:9780316060004
+Year:2006
+Publisher:Little Brown & Company
+Author:['Patricia Hermes']
+Type:BOOK
+Title:The Wild Year
+ISBN:9780439370554
+Year:2003
+Publisher:Scholastic Paperbacks
+Author:['Alice Mead']
+Type:BOOK
+Title:Junebug
+ISBN:9780374339647
+Year:1995
+Publisher:Macmillan
