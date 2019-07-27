@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ddb4c8-2899-4b5a-ae69-6d9a756c9f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/isbn_toolkit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/not_found.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/isbn.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isbn_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/isbn_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn_toolkit.py" beforeDir="false" afterPath="$PROJECT_DIR$/isbn_toolkit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_sql.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.isbn_toolkit">
+  <component name="RunManager" selected="Python.website_sql">
     <configuration name="isbn_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="website_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,7 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\isbn_processor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website_sql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.website_sql" />
         <item itemvalue="Python.isbn_toolkit" />
         <item itemvalue="Python.isbn_processor" />
         <item itemvalue="Python tests.Unittests in isbn_processor_test.py" />
         <item itemvalue="Python.sql_test" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564067813693</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add a lot of new functionality. Most of it has to do with statistics and making use of the data from the books">
+      <created>1564113832266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564113832266</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I wrapped up most of the code so it is commented cleanly and works.&#10;&#10;There is a lot of other parts I would like to add this but this is a good beginning to a long project.&#10;&#10;A lot to come in the future!" />
     <MESSAGE value="Added test files, need to flesh them out but that wil come with time (test driven development)&#10;&#10;Next thing to add to going through all of the isbn's collected from the library of books (650+ books)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test files, need to flesh them out but that wil come with time (test driven development)&#10;&#10;Next thing to add to going through all of the isbn's collected from the library of books (650+ books)" />
+    <MESSAGE value="Add a lot of new functionality. Most of it has to do with statistics and making use of the data from the books" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a lot of new functionality. Most of it has to do with statistics and making use of the data from the books" />
   </component>
 </project>

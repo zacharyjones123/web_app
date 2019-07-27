@@ -100,16 +100,23 @@ def write_book_to_file(dictionary):
             isbn_txt.write("\n")
 
 
-def get_dict_from_file():
+def get_book_list_from_file():
     new_dict = []
     with open("isbn.txt", "r") as isbn_txt:
         counter = 0
         new_temp_dict = {}
+        new_temp_dict["Title"] = "Nah"
+        new_temp_dict["Author"] = "Nah"
+        new_temp_dict["ISBN"] = "Nah"
+        new_temp_dict["Type"] = "Nah"
+        new_temp_dict["Year"] = 1000
+        new_temp_dict["Publisher"] = "Nah"
         for line in isbn_txt:
             line_split = line.split(":")
+            print(line)
             new_temp_dict[line_split[0]] = line_split[1]
             counter += 1
-            if counter == 5:
+            if counter == 6:
                 new_dict.append(new_temp_dict)
                 counter = 0
                 new_temp_dict = {}

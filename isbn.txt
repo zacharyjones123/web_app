@@ -1335,7 +1335,7 @@ Type:BOOK
 Title:Little Prince Know-It-All
 ISBN:9780307263018
 Year:1998
-Publisher:
+Publisher: ____
 Author:['']
 Type:BOOK
 Title:The Fox In The Moon
@@ -1437,7 +1437,7 @@ Type:BOOK
 Title:Leola And The Honeybears
 ISBN:9780590383691
 Year:2000
-Publisher:
+Publisher: ____
 Author:['John Steptoe']
 Type:BOOK
 Title:Mufaros Beautiful Daughters
@@ -1467,7 +1467,7 @@ Type:BOOK
 Title:Little Red Riding Hood
 ISBN:9781472331397
 Year:2015
-Publisher:
+Publisher: ____
 Author:['Lewis Carroll']
 Type:BOOK
 Title:The Walrus And The Carpenter
@@ -1516,9 +1516,6 @@ Title:Fables
 ISBN:9780064430463
 Year:1983
 Publisher:Harper Collins
-
-Author:['Ann McGovern']
-Type:BOOK
 Author:['']
 Type:BOOK
 Title:The Little Red Hen

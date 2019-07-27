@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
 
-from isbn_processor import get_dict_from_file
+from isbn_processor import get_book_list_from_file
 from isbn_processor import add_book
 from isbn_processor import process_isbns
 """

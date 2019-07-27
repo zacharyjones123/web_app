@@ -1,4 +1,5 @@
 import mysql.connector
+from isbn_processor import get_book_list_from_file
 
 """
 File Name: website_sql.py
@@ -18,6 +19,24 @@ mydb = mysql.connector.connect(
 
 # Cursor in order to traverse MySql database
 mycursor = mydb.cursor(buffered=True)
+
+
+def insert_new_books():
+    """
+    Used to add all books from isbn.txt into the database
+
+    :return:
+    """
+    # using isbn_processor method to get dictionary
+    # to access books easily
+    book_list = get_book_list_from_file()
+    for book in book_list:
+        query = "INSERT INTO books (`Title`, `Author`, `ISBN`, `Year`, `Publisher`) VALUES (%s, %s, %s, %s, %s)"
+        print(book)
+        val = (book["Title"],book["Author"],book["ISBN"],book["Year"],book["Publisher"])
+        mycursor.execute(query, val)
+        mydb.commit()
+        print(mycursor.rowcount, "record inserted.")
 
 
 def insert_into_database():
@@ -47,3 +66,4 @@ def select_from_database():
         print(result)
     print(result_set)
 
+insert_new_books()
