@@ -29,6 +29,7 @@ def clean_isbn(isbn_given):
     isbn_clean = isbn_from_words(query)
     return isbn_clean
 
+
 def add_book(line):
     write_book_to_file(get_data(line))
 
@@ -150,6 +151,32 @@ def process_isbns():
         with open("isbn_temp.txt") as isbn_temp_txt:
             while True:
                 isbn_temp_txt.write(raw_txt.readline())
+
+
+def clean_file():
+    print("Hello")
+    col_order = ["Author", "Type", "Title", "ISBN", "Year", "Publisher"]
+    count = 0; # Index
+    with open("isbn.txt", "r") as isbn_txt:
+        with open("temp_isbn.txt", "w+") as new_isbn_txt:
+            for line in isbn_txt.readlines():
+                filtered_line = line.replace("[", "").replace("]", "").replace("\'", "")
+                on_correct_col = False
+                while not on_correct_col:
+                    if not(col_order[count % 6] in filtered_line):
+                        filtered_line = "{}:Nah".format(col_order[count % 6])
+                        new_isbn_txt.write(filtered_line.strip() + "\n")
+                    else:
+                        if filtered_line.split(":")[1].strip() == "":
+                            filtered_line = "{}:Nah".format(col_order[count % 6])
+                        on_correct_col = True
+                        new_isbn_txt.write(filtered_line.strip() + "\n")
+                        count += 1
+
+        # Continue through the file
+
+
+clean_file()
 
 
 # Need to add tester data

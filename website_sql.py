@@ -66,4 +66,5 @@ def select_from_database():
         print(result)
     print(result_set)
 
+
 insert_new_books()

@@ -1,16 +1,21 @@
-import unittest
+import pytest
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, True)
+@pytest.fixture
+def database_cred(request, tmpdir):
+    def clean_up_login():
+        print(tmpdir)
+        pass
+        # Call method to clean up from
+        # file
+    request.addfinalizer(clean_up_login)
+    return 'login_info'
 
-    def test_insert_into_database(self):
-        self.assertEqual(True, True)
 
-    def test_select_from_database(self):
-        self.assertEqual(True, True)
+def test_insert(database_cred):
+    pytest.skip('WIP')
+    assert "abc" == "bcd"
 
 
-if __name__ == '__main__':
-    unittest.main()
+def test_select(database_cred):
+    assert 'abc' == 'abc'
