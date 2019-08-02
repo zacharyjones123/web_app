@@ -184,3 +184,14 @@ clean_file()
 # The rest (clean_isbn, get_data, and writebook_to_file are helper methods
 # fill raw.txt with the isbns that need to be processed, and isbn.txt
 # will be filled with the data about the books, or nothing about them
+
+def __str__(self):
+    return "Hello"
+
+
+def __repr__(self):
+    return "Hello"
+
+
+def __format__(self, f):
+    return "Hello"

@@ -1,5 +1,5 @@
 import mysql.connector
-from isbn_processor import get_book_list_from_file
+from karalibraryapp.isbn_processor import get_book_list_from_file
 
 """
 File Name: website_sql.py
@@ -68,3 +68,15 @@ def select_from_database():
 
 
 insert_new_books()
+
+
+def __str__(self):
+    return "Hello"
+
+
+def __repr__(self):
+    return "Hello"
+
+
+def __format__(self, f):
+    return "Hello"

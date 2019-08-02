@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ddb4c8-2899-4b5a-ae69-6d9a756c9f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/temp_isbn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/isbn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isbn_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/isbn_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isbn_processor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/isbn_processor_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website_sql_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/website_sql_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn_processor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isbn_toolkit.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_toolkit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myreferences.bib" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/myreferences.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/not_found.txt" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/not_found.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp_isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/temp_isbn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/website_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website_sql_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/website_sql_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +42,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -62,7 +72,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/isbn_processor.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp\isbn_processor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/isbn_toolkit.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp\isbn_toolkit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website_sql.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp\website_sql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website_sql_test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp\website_sql_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +154,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/isbn_processor_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -197,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564239600103</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="This commit consists of me playing around with unittest and pytest. Pushing this now before I start to flesh out the test suite so I know there is a working version.">
+      <created>1564609256845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564609256845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +235,7 @@
     <MESSAGE value="Added test files, need to flesh them out but that wil come with time (test driven development)&#10;&#10;Next thing to add to going through all of the isbn's collected from the library of books (650+ books)" />
     <MESSAGE value="Add a lot of new functionality. Most of it has to do with statistics and making use of the data from the books" />
     <MESSAGE value="Added a way to insert all of the books in isbn.txt into the database!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a way to insert all of the books in isbn.txt into the database!" />
+    <MESSAGE value="This commit consists of me playing around with unittest and pytest. Pushing this now before I start to flesh out the test suite so I know there is a working version." />
+    <option name="LAST_COMMIT_MESSAGE" value="This commit consists of me playing around with unittest and pytest. Pushing this now before I start to flesh out the test suite so I know there is a working version." />
   </component>
 </project>

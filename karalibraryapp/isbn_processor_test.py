@@ -1,5 +1,5 @@
 import unittest
-from isbn_processor import *
+from karalibraryapp.isbn_processor import *
 
 """
 Each test case should follow:
