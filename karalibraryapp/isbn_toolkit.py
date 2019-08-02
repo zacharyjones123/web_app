@@ -11,6 +11,14 @@ basic filtering and statistics
 
 
 def make_horizontal_bar_graph(x_axis, y_axis, x_label, title):
+    """
+    Tester for docing
+    :param x_axis:
+    :param y_axis:
+    :param x_label:
+    :param title:
+    :return:
+    """
     y_pos = np.arange(len(x_axis))
 
     plt.barh(y_pos, y_axis, align='center', alpha=0.5)
@@ -22,6 +30,10 @@ def make_horizontal_bar_graph(x_axis, y_axis, x_label, title):
 
 
 def count_books():
+    """
+    Test for docing
+    :return:
+    """
     with open("isbn.txt", "r") as isbn:
         count = 0
         for line in isbn.readlines():
@@ -31,6 +43,10 @@ def count_books():
 
 
 def collect_authors():
+    """
+    Test for docing
+    :return:
+    """
     authors = {}
     with open("isbn.txt", "r") as isbn:
         count = 0
@@ -46,6 +62,10 @@ def collect_authors():
 
 
 def collect_isbns():
+    """
+    Test for docing
+    :return:
+    """
     isbns = []
     with open("isbn.txt", "r") as isbn:
         for line in isbn.readlines():
@@ -56,6 +76,10 @@ def collect_isbns():
 
 
 def collect_years():
+    """
+    Test for docing
+    :return:
+    """
     years = {}
     with open("isbn.txt", "r") as isbn:
         for line in isbn.readlines():
@@ -73,9 +97,6 @@ def collect_years():
             y_axis.append(years[i])
     make_horizontal_bar_graph(x_axis, y_axis, "Amount of Books", "Years For Books")
 
-
-collect_isbns()
-
 # add_book("978-0679824114")
 
 # book_dict = get_dict_from_file()
@@ -84,11 +105,28 @@ collect_isbns()
 # process_isbns()
 
 def __str__(self):
+    """
+    Test for docing
+    :param self:
+    :return:
+    """
     return "Hello"
 
 
 def __repr__(self):
+    """
+    Test for docing
+    :param self:
+    :return:
+    """
     return "Hello"
 
+
 def __format__(self, f):
+    """
+    Test for docing
+    :param self:
+    :param f:
+    :return:
+    """
     return "Hello"

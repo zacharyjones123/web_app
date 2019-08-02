@@ -22,8 +22,20 @@ def clean_isbn(isbn_given):
     This method is meant to clean the isbn up so it is
     usable in the MYSQL query
 
-    :param isbn_given:
-    :return:
+    >>> clean_isbn("978-3-16-148410-0")
+    '9783161484100'
+    >>> clean_isbn("9783161484100")
+    '9783161484100'
+    >>> clean_isbn("978-3161484100")
+    '9783161484100'
+    >>> clean_isbn("9-7-8-3-1-6-1-4-8-4-1-0-0")
+    '9780883855119'
+    >>> clean_isbn("9-7-8-3-1-6-1484100")
+    >>> clean_isbn("978-3-1-6-1484100")
+    '9783161484100'
+
+    :param isbn_given: isbn to be processed
+    :return: returns an isbn that is only numbers
     """
     query = isbn_given.replace(' ', '+')
     isbn_clean = isbn_from_words(query)
@@ -105,13 +117,13 @@ def get_book_list_from_file():
     new_dict = []
     with open("isbn.txt", "r") as isbn_txt:
         counter = 0
-        new_temp_dict = {}
-        new_temp_dict["Title"] = "Nah"
-        new_temp_dict["Author"] = "Nah"
-        new_temp_dict["ISBN"] = "Nah"
-        new_temp_dict["Type"] = "Nah"
-        new_temp_dict["Year"] = 1000
-        new_temp_dict["Publisher"] = "Nah"
+        new_temp_dict = {"Title": "Nah",
+                         "Author": "Nah",
+                         "ISBN": "Nah",
+                         "Type": "Nah",
+                         "Year": 1000,
+                         "Publisher": "Nah"
+                         }
         for line in isbn_txt:
             line_split = line.split(":")
             print(line)
@@ -125,7 +137,7 @@ def get_book_list_from_file():
 
 
 def process_isbns():
-    #Type Error = invalid ISBN number
+    # Type Error = invalid ISBN number
     # isbnlib.dev._exceptions.ISBNNotConsistentError = not sure of this error yet
     num_of_requests = 0
     try:
@@ -174,10 +186,6 @@ def clean_file():
                         count += 1
 
         # Continue through the file
-
-
-clean_file()
-
 
 # Need to add tester data
 # Main file to run is process_isbns()

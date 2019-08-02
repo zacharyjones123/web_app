@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>karalibraryapp.website_sql &#8212; Kara&#39;s Library Application 1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for karalibraryapp.website_sql</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">mysql.connector</span>
+<span class="kn">from</span> <span class="nn">karalibraryapp.isbn_processor</span> <span class="k">import</span> <span class="n">get_book_list_from_file</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">File Name: website_sql.py</span>
+<span class="sd">Purpose:  To connect to my personal websites</span>
+<span class="sd">          MySql database and testing basic</span>
+<span class="sd">          functionality</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># database info</span>
+<span class="c1"># Uses the mysql.connector.connect method</span>
+<span class="n">mydb</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+  <span class="n">host</span><span class="o">=</span><span class="s2">&quot;www.zacharyjones123.com&quot;</span><span class="p">,</span>
+  <span class="n">user</span><span class="o">=</span><span class="s2">&quot;zrjones1_pycharm&quot;</span><span class="p">,</span>
+  <span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;wxH,+D0itryH&quot;</span><span class="p">,</span>
+  <span class="n">database</span><span class="o">=</span><span class="s2">&quot;zrjones1_communicator&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Cursor in order to traverse MySql database</span>
+<span class="n">mycursor</span> <span class="o">=</span> <span class="n">mydb</span><span class="o">.</span><span class="n">cursor</span><span class="p">(</span><span class="n">buffered</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="insert_new_books"><a class="viewcode-back" href="../../index.html#karalibraryapp.website_sql.insert_new_books">[docs]</a><span class="k">def</span> <span class="nf">insert_new_books</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Used to add all books from isbn.txt into the database</span>
+
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># using isbn_processor method to get dictionary</span>
+    <span class="c1"># to access books easily</span>
+    <span class="n">book_list</span> <span class="o">=</span> <span class="n">get_book_list_from_file</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">book_list</span><span class="p">:</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;INSERT INTO books (`Title`, `Author`, `ISBN`, `Year`, `Publisher`) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;Title&quot;</span><span class="p">],</span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;Author&quot;</span><span class="p">],</span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;ISBN&quot;</span><span class="p">],</span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;Year&quot;</span><span class="p">],</span><span class="n">book</span><span class="p">[</span><span class="s2">&quot;Publisher&quot;</span><span class="p">])</span>
+        <span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+        <span class="n">mydb</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">mycursor</span><span class="o">.</span><span class="n">rowcount</span><span class="p">,</span> <span class="s2">&quot;record inserted.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="insert_into_database"><a class="viewcode-back" href="../../index.html#karalibraryapp.website_sql.insert_into_database">[docs]</a><span class="k">def</span> <span class="nf">insert_into_database</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method is to show the insert feature of</span>
+<span class="sd">    the MySql database</span>
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;INSERT INTO books (`Title`, `Author`, `ISBN`, `Year`, `Publisher`) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+    <span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+    <span class="n">mydb</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mycursor</span><span class="o">.</span><span class="n">rowcount</span><span class="p">,</span> <span class="s2">&quot;record inserted.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="select_from_database"><a class="viewcode-back" href="../../index.html#karalibraryapp.website_sql.select_from_database">[docs]</a><span class="k">def</span> <span class="nf">select_from_database</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method is to demonstrate the SELECT method</span>
+<span class="sd">    from MySql database</span>
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM books;&quot;</span>
+    <span class="n">mycursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="n">result_set</span> <span class="o">=</span> <span class="n">mycursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">result_set</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result_set</span><span class="p">)</span></div>
+
+
+
+<span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">__format__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Kara's Library Application</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Zachary Jones.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

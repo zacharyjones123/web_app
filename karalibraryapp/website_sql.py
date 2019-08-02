@@ -67,8 +67,6 @@ def select_from_database():
     print(result_set)
 
 
-insert_new_books()
-
 
 def __str__(self):
     return "Hello"

@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>karalibraryapp.isbn_processor &#8212; Kara&#39;s Library Application 1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for karalibraryapp.isbn_processor</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="c1"># https://pypi.org/project/isbntools/</span>
+<span class="kn">from</span> <span class="nn">isbntools.app</span> <span class="k">import</span> <span class="n">isbn_from_words</span>
+<span class="kn">from</span> <span class="nn">isbntools.app</span> <span class="k">import</span> <span class="n">registry</span>
+<span class="kn">from</span> <span class="nn">isbntools.app</span> <span class="k">import</span> <span class="n">meta</span>
+<span class="kn">from</span> <span class="nn">isbnlib.dev</span> <span class="k">import</span> <span class="n">NoDataForSelectorError</span>
+<span class="kn">from</span> <span class="nn">isbnlib.dev</span> <span class="k">import</span> <span class="n">ISBNLibHTTPError</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">File Name: isbn_processor.py</span>
+<span class="sd">Purpose: To take in isbn&#39;s from a raw.txt file</span>
+<span class="sd">        and output data into a isbn.txt file in</span>
+<span class="sd">        a format that has information about the</span>
+<span class="sd">        book</span>
+<span class="sd">Modules Used:   isbnlib</span>
+<span class="sd">                isbntools.app</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="clean_isbn"><a class="viewcode-back" href="../../index.html#karalibraryapp.isbn_processor.clean_isbn">[docs]</a><span class="k">def</span> <span class="nf">clean_isbn</span><span class="p">(</span><span class="n">isbn_given</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method is meant to clean the isbn up so it is</span>
+<span class="sd">    usable in the MYSQL query</span>
+
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;978-3-16-148410-0&quot;)</span>
+<span class="sd">    &#39;9783161484100&#39;</span>
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;9783161484100&quot;)</span>
+<span class="sd">    &#39;9783161484100&#39;</span>
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;978-3161484100&quot;)</span>
+<span class="sd">    &#39;9783161484100&#39;</span>
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;9-7-8-3-1-6-1-4-8-4-1-0-0&quot;)</span>
+<span class="sd">    &#39;9780883855119&#39;</span>
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;9-7-8-3-1-6-1484100&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; clean_isbn(&quot;978-3-1-6-1484100&quot;)</span>
+<span class="sd">    &#39;9783161484100&#39;</span>
+
+<span class="sd">    :param isbn_given: isbn to be processed</span>
+<span class="sd">    :return: returns an isbn that is only numbers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="n">isbn_given</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;+&#39;</span><span class="p">)</span>
+    <span class="n">isbn_clean</span> <span class="o">=</span> <span class="n">isbn_from_words</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">isbn_clean</span></div>
+
+
+<span class="k">def</span> <span class="nf">add_book</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+    <span class="n">write_book_to_file</span><span class="p">(</span><span class="n">get_data</span><span class="p">(</span><span class="n">line</span><span class="p">))</span>
+
+
+<div class="viewcode-block" id="get_data"><a class="viewcode-back" href="../../index.html#karalibraryapp.isbn_processor.get_data">[docs]</a><span class="k">def</span> <span class="nf">get_data</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Method to take the data from the MYSQL server and</span>
+<span class="sd">    convert it from</span>
+<span class="sd">    Type:       BOOK</span>
+<span class="sd">    Title:      Why Should I Recycle</span>
+<span class="sd">    Author:     Jen Green</span>
+<span class="sd">    Author:     Mike Gordon</span>
+<span class="sd">    ISBN:       9780764131554</span>
+<span class="sd">    Year:       2005</span>
+<span class="sd">    Publisher:  Barons Juveniles</span>
+
+<span class="sd">    Into a dictionary to make data easily transferable</span>
+<span class="sd">    {</span>
+<span class="sd">        &#39;Author&#39;: [&#39;Jen Green&#39;, &#39;Mike Gordon&#39;],</span>
+<span class="sd">        &#39;Type&#39;: &#39;BOOK&#39;,</span>
+<span class="sd">        &#39;Title&#39;: &#39;Why Should I Recycle?&#39;,</span>
+<span class="sd">        &#39;ISBN&#39;: &#39;9780764131554&#39;,</span>
+<span class="sd">        &#39;Year&#39;: &#39;2005&#39;,</span>
+<span class="sd">        &#39;Publisher&#39;: &#39;Barrons Juveniles&#39;</span>
+<span class="sd">    }</span>
+
+<span class="sd">    :param line:</span>
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Book data dictionary</span>
+    <span class="n">book_data</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Using the isbntools.app, perform the query</span>
+    <span class="n">data_collected</span> <span class="o">=</span> <span class="n">registry</span><span class="o">.</span><span class="n">bibformatters</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">](</span><span class="n">meta</span><span class="p">(</span><span class="n">line</span><span class="p">))</span>
+
+    <span class="c1"># This is meant to be an echo to make sure the request</span>
+    <span class="c1"># is what we were looking for</span>
+    <span class="c1"># print(data_collected)</span>
+
+    <span class="c1"># Split the data at the new lines</span>
+    <span class="n">iterated_data</span> <span class="o">=</span> <span class="n">data_collected</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Type:BOOK</span>
+
+    <span class="c1"># This is for authors, since there can be multiple</span>
+    <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;Author&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Loops through the data collected for the book</span>
+    <span class="c1"># and converts it into a dictionary</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">iterated_data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Author&quot;</span><span class="p">:</span>
+            <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;Author&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">book_data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">book_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">book_data</span></div>
+
+
+<div class="viewcode-block" id="write_book_to_file"><a class="viewcode-back" href="../../index.html#karalibraryapp.isbn_processor.write_book_to_file">[docs]</a><span class="k">def</span> <span class="nf">write_book_to_file</span><span class="p">(</span><span class="n">dictionary</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Takes the dictionary created with get_data</span>
+<span class="sd">    and saves it into a file to be accessed at</span>
+<span class="sd">    a later time</span>
+<span class="sd">    :param dictionary:</span>
+<span class="sd">    :return:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;isbn.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">isbn_txt</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">isbn_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">value</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="n">isbn_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<span class="k">def</span> <span class="nf">get_book_list_from_file</span><span class="p">():</span>
+    <span class="n">new_dict</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;isbn.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">isbn_txt</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">new_temp_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Title&quot;</span><span class="p">:</span> <span class="s2">&quot;Nah&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;Author&quot;</span><span class="p">:</span> <span class="s2">&quot;Nah&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;ISBN&quot;</span><span class="p">:</span> <span class="s2">&quot;Nah&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Nah&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;Year&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                         <span class="s2">&quot;Publisher&quot;</span><span class="p">:</span> <span class="s2">&quot;Nah&quot;</span>
+                         <span class="p">}</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">isbn_txt</span><span class="p">:</span>
+            <span class="n">line_split</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="n">new_temp_dict</span><span class="p">[</span><span class="n">line_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">line_split</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">counter</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+                <span class="n">new_dict</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_temp_dict</span><span class="p">)</span>
+                <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">new_temp_dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">return</span> <span class="n">new_dict</span>
+
+
+<span class="k">def</span> <span class="nf">process_isbns</span><span class="p">():</span>
+    <span class="c1"># Type Error = invalid ISBN number</span>
+    <span class="c1"># isbnlib.dev._exceptions.ISBNNotConsistentError = not sure of this error yet</span>
+    <span class="n">num_of_requests</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">last_isbn_tried</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">raw_txt</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;raw.txt&quot;</span><span class="p">)</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">raw_line</span> <span class="o">=</span> <span class="n">raw_txt</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+            <span class="n">num_of_requests</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">last_isbn_tried</span> <span class="o">=</span> <span class="n">clean_isbn</span><span class="p">(</span><span class="n">raw_line</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">book_dict_results</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="n">last_isbn_tried</span><span class="p">)</span>
+                <span class="n">write_book_to_file</span><span class="p">(</span><span class="n">book_dict_results</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">NoDataForSelectorError</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> does not exist&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">raw_line</span><span class="p">))</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;not_found.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">not_found_txt</span><span class="p">:</span>
+                    <span class="n">not_found_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">last_isbn_tried</span><span class="p">)</span>
+                    <span class="n">not_found_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># Need to finish reading the file</span>
+
+    <span class="k">except</span> <span class="n">ISBNLibHTTPError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;O no, you made </span><span class="si">{}</span><span class="s2"> request!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_of_requests</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We stopped at </span><span class="si">{}</span><span class="s2"> isbn.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">last_isbn_tried</span><span class="p">))</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;isbn_temp.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">isbn_temp_txt</span><span class="p">:</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">isbn_temp_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">raw_txt</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>
+
+
+<span class="k">def</span> <span class="nf">clean_file</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+    <span class="n">col_order</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Author&quot;</span><span class="p">,</span> <span class="s2">&quot;Type&quot;</span><span class="p">,</span> <span class="s2">&quot;Title&quot;</span><span class="p">,</span> <span class="s2">&quot;ISBN&quot;</span><span class="p">,</span> <span class="s2">&quot;Year&quot;</span><span class="p">,</span> <span class="s2">&quot;Publisher&quot;</span><span class="p">]</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1"># Index</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;isbn.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">isbn_txt</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;temp_isbn.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w+&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">new_isbn_txt</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">isbn_txt</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+                <span class="n">filtered_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;]&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+                <span class="n">on_correct_col</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">while</span> <span class="ow">not</span> <span class="n">on_correct_col</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">col_order</span><span class="p">[</span><span class="n">count</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span> <span class="ow">in</span> <span class="n">filtered_line</span><span class="p">):</span>
+                        <span class="n">filtered_line</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:Nah&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col_order</span><span class="p">[</span><span class="n">count</span> <span class="o">%</span> <span class="mi">6</span><span class="p">])</span>
+                        <span class="n">new_isbn_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filtered_line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">filtered_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+                            <span class="n">filtered_line</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:Nah&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">col_order</span><span class="p">[</span><span class="n">count</span> <span class="o">%</span> <span class="mi">6</span><span class="p">])</span>
+                        <span class="n">on_correct_col</span> <span class="o">=</span> <span class="kc">True</span>
+                        <span class="n">new_isbn_txt</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filtered_line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="c1"># Continue through the file</span>
+
+<span class="c1"># Need to add tester data</span>
+<span class="c1"># Main file to run is process_isbns()</span>
+<span class="c1"># The rest (clean_isbn, get_data, and writebook_to_file are helper methods</span>
+<span class="c1"># fill raw.txt with the isbns that need to be processed, and isbn.txt</span>
+<span class="c1"># will be filled with the data about the books, or nothing about them</span>
+
+<span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">__format__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello&quot;</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Kara's Library Application</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Zachary Jones.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

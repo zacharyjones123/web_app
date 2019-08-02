@@ -35,6 +35,152 @@
 <div class="toctree-wrapper compound">
 </div>
 </div>
+<div class="section" id="module-karalibraryapp.isbn_processor">
+<span id="isbn-processor"></span><h1>ISBN Processor<a class="headerlink" href="#module-karalibraryapp.isbn_processor" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="karalibraryapp.isbn_processor.clean_isbn">
+<code class="sig-prename descclassname">karalibraryapp.isbn_processor.</code><code class="sig-name descname">clean_isbn</code><span class="sig-paren">(</span><em class="sig-param">isbn_given</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_processor.html#clean_isbn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_processor.clean_isbn" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is meant to clean the isbn up so it is
+usable in the MYSQL query</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;978-3-16-148410-0&quot;</span><span class="p">)</span>
+<span class="go">&#39;9783161484100&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;9783161484100&quot;</span><span class="p">)</span>
+<span class="go">&#39;9783161484100&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;978-3161484100&quot;</span><span class="p">)</span>
+<span class="go">&#39;9783161484100&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;9-7-8-3-1-6-1-4-8-4-1-0-0&quot;</span><span class="p">)</span>
+<span class="go">&#39;9780883855119&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;9-7-8-3-1-6-1484100&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_isbn</span><span class="p">(</span><span class="s2">&quot;978-3-1-6-1484100&quot;</span><span class="p">)</span>
+<span class="go">&#39;9783161484100&#39;</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>isbn_given</strong> – isbn to be processed</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns an isbn that is only numbers</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_processor.get_data">
+<code class="sig-prename descclassname">karalibraryapp.isbn_processor.</code><code class="sig-name descname">get_data</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_processor.html#get_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_processor.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to take the data from the MYSQL server and
+convert it from
+Type:       BOOK
+Title:      Why Should I Recycle
+Author:     Jen Green
+Author:     Mike Gordon
+ISBN:       9780764131554
+Year:       2005
+Publisher:  Barons Juveniles</p>
+<p>Into a dictionary to make data easily transferable
+{</p>
+<blockquote>
+<div><p>‘Author’: [‘Jen Green’, ‘Mike Gordon’],
+‘Type’: ‘BOOK’,
+‘Title’: ‘Why Should I Recycle?’,
+‘ISBN’: ‘9780764131554’,
+‘Year’: ‘2005’,
+‘Publisher’: ‘Barrons Juveniles’</p>
+</div></blockquote>
+<p>}</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>line</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_processor.write_book_to_file">
+<code class="sig-prename descclassname">karalibraryapp.isbn_processor.</code><code class="sig-name descname">write_book_to_file</code><span class="sig-paren">(</span><em class="sig-param">dictionary</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_processor.html#write_book_to_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_processor.write_book_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the dictionary created with get_data
+and saves it into a file to be accessed at
+a later time
+:param dictionary:
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-karalibraryapp.isbn_toolkit">
+<span id="isbn-toolkit"></span><h1>ISBN ToolKit<a class="headerlink" href="#module-karalibraryapp.isbn_toolkit" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="karalibraryapp.isbn_toolkit.collect_authors">
+<code class="sig-prename descclassname">karalibraryapp.isbn_toolkit.</code><code class="sig-name descname">collect_authors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_toolkit.html#collect_authors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_toolkit.collect_authors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for docing
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_toolkit.collect_isbns">
+<code class="sig-prename descclassname">karalibraryapp.isbn_toolkit.</code><code class="sig-name descname">collect_isbns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_toolkit.html#collect_isbns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_toolkit.collect_isbns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for docing
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_toolkit.collect_years">
+<code class="sig-prename descclassname">karalibraryapp.isbn_toolkit.</code><code class="sig-name descname">collect_years</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_toolkit.html#collect_years"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_toolkit.collect_years" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for docing
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_toolkit.count_books">
+<code class="sig-prename descclassname">karalibraryapp.isbn_toolkit.</code><code class="sig-name descname">count_books</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_toolkit.html#count_books"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_toolkit.count_books" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test for docing
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.isbn_toolkit.make_horizontal_bar_graph">
+<code class="sig-prename descclassname">karalibraryapp.isbn_toolkit.</code><code class="sig-name descname">make_horizontal_bar_graph</code><span class="sig-paren">(</span><em class="sig-param">x_axis</em>, <em class="sig-param">y_axis</em>, <em class="sig-param">x_label</em>, <em class="sig-param">title</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/isbn_toolkit.html#make_horizontal_bar_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.isbn_toolkit.make_horizontal_bar_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tester for docing
+:param x_axis:
+:param y_axis:
+:param x_label:
+:param title:
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-karalibraryapp.website_sql">
+<span id="sql-connection"></span><h1>SQL Connection<a class="headerlink" href="#module-karalibraryapp.website_sql" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="karalibraryapp.website_sql.insert_into_database">
+<code class="sig-prename descclassname">karalibraryapp.website_sql.</code><code class="sig-name descname">insert_into_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/website_sql.html#insert_into_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.website_sql.insert_into_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is to show the insert feature of
+the MySql database
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.website_sql.insert_new_books">
+<code class="sig-prename descclassname">karalibraryapp.website_sql.</code><code class="sig-name descname">insert_new_books</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/website_sql.html#insert_new_books"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.website_sql.insert_new_books" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to add all books from isbn.txt into the database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="karalibraryapp.website_sql.select_from_database">
+<code class="sig-prename descclassname">karalibraryapp.website_sql.</code><code class="sig-name descname">select_from_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/karalibraryapp/website_sql.html#select_from_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#karalibraryapp.website_sql.select_from_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is to demonstrate the SELECT method
+from MySql database
+:return:</p>
+</dd></dl>
+
+</div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">

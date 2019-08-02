@@ -10,6 +10,20 @@ Welcome to Kara's Library Application's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+ISBN Processor
+================
+.. automodule:: karalibraryapp.isbn_processor
+   :members:
+
+ISBN ToolKit
+================
+.. automodule:: karalibraryapp.isbn_toolkit
+   :members:
+
+SQL Connection
+================
+.. automodule:: karalibraryapp.website_sql
+   :members:
 
 
 Indices and tables
