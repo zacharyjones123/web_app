@@ -18,3 +18,5 @@ Publication element - thie identifies the particular edition and format of a spe
 Check digit - This is always the final single digit that mathematically validate the rest of the number and it is calculated using a Modulus 10 system with alternate weights of 1 and 3
 
 The ISBN is machine-readable in the form of a 13-digit EAN-13 bar code. This is fast and avoids mistakes.
+
+Source: https://www.isbn-international.org/
