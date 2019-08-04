@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ddb4c8-2899-4b5a-ae69-6d9a756c9f88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/karalibraryapp/barcode_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564752481556</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I added to the REadme today and I Lso changed the tests. &#10;&#10;The clean_isbn method has been changed to do 3 basic tests&#10;1) 13 digits&#10;2) starts with 978 or 979 &#10;3) Is the check digit correct?&#10;&#10;The original implementation of this method used a emthod from isbntools called isbn_from_words and it wasn't the method that I needed for this project but I might implement it later on">
+      <created>1564877837160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564877837160</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +249,7 @@
     <MESSAGE value="This commit consists of me playing around with unittest and pytest. Pushing this now before I start to flesh out the test suite so I know there is a working version." />
     <MESSAGE value="This commit worked with adding nice documentation to my code&#10;installed these modules&#10;- pylint&#10;- pycodestyle&#10;- black&#10;- sphinx&#10;- sphinx-quickstart&#10;- reStructuredText&#10;- sphinx-apidoc -o docs moduleName&#10;- mypy (static typing)&#10;- reprlib (good for printing elements)" />
     <MESSAGE value="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!" />
+    <MESSAGE value="I added to the REadme today and I Lso changed the tests. &#10;&#10;The clean_isbn method has been changed to do 3 basic tests&#10;1) 13 digits&#10;2) starts with 978 or 979 &#10;3) Is the check digit correct?&#10;&#10;The original implementation of this method used a emthod from isbntools called isbn_from_words and it wasn't the method that I needed for this project but I might implement it later on" />
+    <option name="LAST_COMMIT_MESSAGE" value="I added to the REadme today and I Lso changed the tests. &#10;&#10;The clean_isbn method has been changed to do 3 basic tests&#10;1) 13 digits&#10;2) starts with 978 or 979 &#10;3) Is the check digit correct?&#10;&#10;The original implementation of this method used a emthod from isbntools called isbn_from_words and it wasn't the method that I needed for this project but I might implement it later on" />
   </component>
 </project>
