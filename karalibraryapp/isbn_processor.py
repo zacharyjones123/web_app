@@ -4,6 +4,7 @@
 from isbntools.app import isbn_from_words
 from isbntools.app import registry
 from isbntools.app import meta
+from isbntools.app import to_isbn13 as convert_isbn10_to_isbn13
 from isbnlib.dev import NoDataForSelectorError
 from isbnlib.dev import ISBNLibHTTPError
 """
@@ -37,9 +38,42 @@ def clean_isbn(isbn_given):
     :param isbn_given: isbn to be processed
     :return: returns an isbn that is only numbers
     """
-    query = isbn_given.replace(' ', '+')
-    isbn_clean = isbn_from_words(query)
-    return isbn_clean
+    # query = isbn_given.replace(' ', '+')
+    # isbn_clean = isbn_from_words(query)
+
+    # Just using this as a way to look up books,
+    # so where the - or spaces are will not matter
+    # so this method will not try to keep this info
+
+    # Need to go through all of the tests to see if a true
+    # isbns
+
+    # Test 1: 13 digits
+    if len(isbn_given) != 13:
+        return ""  # "Test 1 failed: ISBN not 13 digits"
+
+    # Test 2: first 3 digits 978 or 979
+    if isbn_given[0:3] != "978" and isbn_given[0:3] != "979":
+        return ""  # "Test 2 failed: First three digits not 978 or 979
+
+    def find_check_digit(isbn_test):
+        check_digit = 0
+        mult_by = 1
+        for i in isbn_test[:-1]:
+            num_i = int(i)
+            check_digit += num_i * mult_by
+            if mult_by == 1:
+                mult_by = 3
+            else:
+                mult_by = 1
+        return str(10 - check_digit % 10)
+
+    # Test 3: Check Modulus 10
+    if find_check_digit(isbn_given) != isbn_given[-1]:
+        return ""  # "Test 3 failed: check digit
+
+    return isbn_given
+
 
 
 def add_book(line):
@@ -192,6 +226,7 @@ def clean_file():
 # The rest (clean_isbn, get_data, and writebook_to_file are helper methods
 # fill raw.txt with the isbns that need to be processed, and isbn.txt
 # will be filled with the data about the books, or nothing about them
+
 
 def __str__(self):
     return "Hello"

@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80ddb4c8-2899-4b5a-ae69-6d9a756c9f88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_toolkit.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_toolkit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karalibraryapp/website_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/website_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.website_sql_test">
+  <component name="RunManager" selected="Python tests.Unittests in isbn_processor_test.py">
     <configuration name="isbn_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.website_sql_test" />
         <item itemvalue="Python tests.Unittests in isbn_processor_test.py" />
+        <item itemvalue="Python.website_sql_test" />
         <item itemvalue="Python.website_sql" />
         <item itemvalue="Python.isbn_processor" />
         <item itemvalue="Python.isbn_toolkit" />
@@ -222,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564711397312</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!">
+      <created>1564752481556</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564752481556</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +242,7 @@
     <MESSAGE value="Added a way to insert all of the books in isbn.txt into the database!" />
     <MESSAGE value="This commit consists of me playing around with unittest and pytest. Pushing this now before I start to flesh out the test suite so I know there is a working version." />
     <MESSAGE value="This commit worked with adding nice documentation to my code&#10;installed these modules&#10;- pylint&#10;- pycodestyle&#10;- black&#10;- sphinx&#10;- sphinx-quickstart&#10;- reStructuredText&#10;- sphinx-apidoc -o docs moduleName&#10;- mypy (static typing)&#10;- reprlib (good for printing elements)" />
-    <option name="LAST_COMMIT_MESSAGE" value="This commit worked with adding nice documentation to my code&#10;installed these modules&#10;- pylint&#10;- pycodestyle&#10;- black&#10;- sphinx&#10;- sphinx-quickstart&#10;- reStructuredText&#10;- sphinx-apidoc -o docs moduleName&#10;- mypy (static typing)&#10;- reprlib (good for printing elements)" />
+    <MESSAGE value="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!" />
   </component>
 </project>

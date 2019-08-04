@@ -25,39 +25,34 @@ class MyTestCase(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_suite_test(self):
-        self.assertEqual(True, True)
-
     def test_clean_isbn(self):
-        new_input = ["978-0-7645-2641-1", "0764526413"]
-        output = ["9780764526411", "9780764526411"]
+        new_input = ["9780764526411", "9780764526412", "9780764526412",
+                     "9780764526412", "9780764526412", "9780764526412",
+                     "9780764526412", "9780764526412", "9780764526412",
+                     "9781861978761", "9781861978762", "9781861978763",
+                     "9781861978764", "9781861978765", "9781861978766",
+                     "9781861978767", "9781861978768", "9781861978769"]
+        output = ["9780764526411",           "",              "",
+                  "",           "",              "",
+                  "",           "",              "",
+                  "",           "",              "",
+                  "",           "",              "",
+                  "",           "", "9781861978769"]
         for inn, out in zip(new_input, output):
             self.assertEqual(clean_isbn(inn), out)
 
-    def test_clean_isbn_1(self):
-        self.assertEqual(clean_isbn("978-0-7645-2641-1"), "9780764526411")
-
-    def test_clean_isbn_2(self):
-        self.assertEqual(clean_isbn("978-0764526411"), "9780764526411")
-
-    def test_clean_isbn_3(self):
-        self.assertEqual(clean_isbn("9780764526411"), "9780764526411")
-
-    def test_clean_isbn_4(self):
-        self.assertEqual(clean_isbn("0764526413"), "9780764526411")
-
+    @unittest.skip("WIP")
     def test_get_data_1(self):
         self.assertEqual(True, True)
 
+    @unittest.skip("WIP")
     def test_write_book_to_file(self):
         self.assertEqual(True, True)
 
+    @unittest.skip("WIP")
     def test_process_isbns(self):
         self.assertEqual(True, True)
 
-    @unittest.skip("WIP")
-    def test_clean_isbn_5(self):
-        pass
 
 if __name__ == '__main__':
     unittest.main()
