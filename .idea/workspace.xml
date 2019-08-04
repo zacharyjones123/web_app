@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ddb4c8-2899-4b5a-ae69-6d9a756c9f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/karalibraryapp/barcode_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_barcode_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_isbn_toolkit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/isbn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_isbn_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/not_found.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/not_found.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/raw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/raw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/temp_isbn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/temp_isbn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karalibraryapp/website_sql_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_website_sql.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -34,6 +43,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zachary Jones\PycharmProjects\web_app\files" />
+      <recent name="C:\Users\Zachary Jones\PycharmProjects\web_app\test" />
       <recent name="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp" />
     </key>
   </component>
@@ -49,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in isbn_processor_test.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_isbn_processor.py">
     <configuration name="isbn_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="web_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\karalibraryapp\website_sql_test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Zachary Jones\PycharmProjects\web_app\test\test_website_sql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in isbn_processor_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_isbn_processor.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,13 +155,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/karalibraryapp/isbn_processor_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_isbn_processor.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in isbn_processor_test.py" />
+        <item itemvalue="Python tests.Unittests in test_isbn_processor.py" />
         <item itemvalue="Python.website_sql_test" />
         <item itemvalue="Python.website_sql" />
         <item itemvalue="Python.isbn_processor" />
@@ -225,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564877837160</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Just added in another module to do barcode reading. Just bought a barcode scanner and hope I can get it working!&#10;&#10;The module I have now I installed with&#10;pip install libusb1">
+      <created>1564882314580</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564882314580</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +268,7 @@
     <MESSAGE value="This commit worked with adding nice documentation to my code&#10;installed these modules&#10;- pylint&#10;- pycodestyle&#10;- black&#10;- sphinx&#10;- sphinx-quickstart&#10;- reStructuredText&#10;- sphinx-apidoc -o docs moduleName&#10;- mypy (static typing)&#10;- reprlib (good for printing elements)" />
     <MESSAGE value="I have worked with Sphinx in this commit in order to make a functional website. And I did it! It is basic, but it works! Hopefully I will be able to use that to properly show off my code!" />
     <MESSAGE value="I added to the REadme today and I Lso changed the tests. &#10;&#10;The clean_isbn method has been changed to do 3 basic tests&#10;1) 13 digits&#10;2) starts with 978 or 979 &#10;3) Is the check digit correct?&#10;&#10;The original implementation of this method used a emthod from isbntools called isbn_from_words and it wasn't the method that I needed for this project but I might implement it later on" />
-    <option name="LAST_COMMIT_MESSAGE" value="I added to the REadme today and I Lso changed the tests. &#10;&#10;The clean_isbn method has been changed to do 3 basic tests&#10;1) 13 digits&#10;2) starts with 978 or 979 &#10;3) Is the check digit correct?&#10;&#10;The original implementation of this method used a emthod from isbntools called isbn_from_words and it wasn't the method that I needed for this project but I might implement it later on" />
+    <MESSAGE value="Just added in another module to do barcode reading. Just bought a barcode scanner and hope I can get it working!&#10;&#10;The module I have now I installed with&#10;pip install libusb1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just added in another module to do barcode reading. Just bought a barcode scanner and hope I can get it working!&#10;&#10;The module I have now I installed with&#10;pip install libusb1" />
   </component>
 </project>
