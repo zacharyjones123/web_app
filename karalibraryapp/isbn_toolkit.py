@@ -1,6 +1,7 @@
-import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 import matplotlib.pyplot as plt
+plt.rcdefaults()
+
 
 """
 The purpose of this is to take
@@ -49,7 +50,6 @@ def collect_authors():
     """
     authors = {}
     with open("isbn.txt", "r") as isbn:
-        count = 0
         for line in isbn.readlines():
             if "Author" in line:
                 line_split = line.split(":")
@@ -104,29 +104,16 @@ def collect_years():
 
 # process_isbns()
 
+
 def __str__(self):
-    """
-    Test for docing
-    :param self:
-    :return:
-    """
-    return "Hello"
+    return self.__name__
 
 
 def __repr__(self):
-    """
-    Test for docing
-    :param self:
-    :return:
-    """
-    return "Hello"
+    return self.__name__
 
 
 def __format__(self, f):
-    """
-    Test for docing
-    :param self:
-    :param f:
-    :return:
-    """
-    return "Hello"
+
+    if f[-1] == 's':
+        return self.__name__

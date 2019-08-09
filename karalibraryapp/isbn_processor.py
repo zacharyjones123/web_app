@@ -1,16 +1,10 @@
 #!/usr/bin/env python
-import sys
-sys.path.append('/home/pi/.local/lib/python3.7/site-packages')
-
 # https://pypi.org/project/isbntools/
-from isbntools.app import isbn_from_words
 from isbntools.app import registry
 from isbntools.app import meta
-from isbntools.app import to_isbn13 as convert_isbn10_to_isbn13
 from isbnlib.dev import NoDataForSelectorError
 from isbnlib.dev import ISBNLibHTTPError
 
-from barcode_reader import scan_barcode_pi
 
 # Global variable to use for barcode
 
@@ -80,7 +74,6 @@ def clean_isbn(isbn_given):
         return ""  # "Test 3 failed: check digit
 
     return isbn_given
-
 
 
 def add_book(line):
@@ -181,9 +174,9 @@ def process_isbns():
     # Type Error = invalid ISBN number
     # isbnlib.dev._exceptions.ISBNNotConsistentError = not sure of this error yet
     num_of_requests = 0
+    last_isbn_tried = "0000000000000"
+    raw_txt = open("raw.txt")
     try:
-        last_isbn_tried = None
-        raw_txt = open("raw.txt")
         while True:
             raw_line = raw_txt.readline()
             num_of_requests += 1
@@ -209,7 +202,7 @@ def process_isbns():
 def clean_file():
     print("Hello")
     col_order = ["Author", "Type", "Title", "ISBN", "Year", "Publisher"]
-    count = 0; # Index
+    count = 0  # Index
     with open("isbn.txt", "r") as isbn_txt:
         with open("temp_isbn.txt", "w+") as new_isbn_txt:
             for line in isbn_txt.readlines():
@@ -236,12 +229,14 @@ def clean_file():
 
 
 def __str__(self):
-    return "Hello"
+    return self.__name__
 
 
 def __repr__(self):
-    return "Hello"
+    return self.__name__
 
 
 def __format__(self, f):
-    return "Hello"
+
+    if f[-1] == 's':
+        return self.__name__

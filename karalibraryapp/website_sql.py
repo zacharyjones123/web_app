@@ -1,11 +1,8 @@
 #!/usr/bin/env python
-import sys
-sys.path.append('/home/pi/.local/lib/python3.7/site-packages')
-
 import mysql.connector
-from isbn_processor import get_book_list_from_file
-from isbn_processor import get_data
-from barcode_reader import scan_barcode_pi
+from karalibraryapp.isbn_processor import get_book_list_from_file
+from karalibraryapp.isbn_processor import get_data
+from karalibraryapp.barcode_reader import scan_barcode_pi
 
 """
 File Name: website_sql.py
@@ -39,7 +36,7 @@ def insert_new_books():
     for book in book_list:
         query = "INSERT INTO books (`Title`, `Author`, `ISBN`, `Year`, `Publisher`) VALUES (%s, %s, %s, %s, %s)"
         print(book)
-        val = (book["Title"],book["Author"],book["ISBN"],book["Year"],book["Publisher"])
+        val = (book["Title"], book["Author"], book["ISBN"], book["Year"], book["Publisher"])
         mycursor.execute(query, val)
         mydb.commit()
         print(mycursor.rowcount, "record inserted.")
@@ -52,13 +49,13 @@ def insert_into_database():
     :return:
     """
     book_data = get_data(scan_barcode_pi())
-                         
-    
     query = "INSERT INTO books (`Title`, `Author`, `ISBN`, `Year`, `Publisher`) VALUES (%s, %s, %s, %s, %s)"
     val = (book_data["Title"], book_data["Author"][0], book_data["ISBN"], book_data["Year"], book_data["Publisher"])
     mycursor.execute(query, val)
     mydb.commit()
     print(mycursor.rowcount, "record inserted.")
+
+
 insert_into_database()
 
 
@@ -77,14 +74,15 @@ def select_from_database():
     print(result_set)
 
 
-
 def __str__(self):
-    return "Hello"
+    return self.__name__
 
 
 def __repr__(self):
-    return "Hello"
+    return self.__name__
 
 
 def __format__(self, f):
-    return "Hello"
+
+    if f[-1] == 's':
+        return self.__name__

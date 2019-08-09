@@ -9,3 +9,5 @@ More information about the project later
 """
 
 __author__ = "Zachary Jones"
+import sys
+sys.path.append('/home/pi/.local/lib/python3.7/site-packages')
