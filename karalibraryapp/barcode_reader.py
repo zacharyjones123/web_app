@@ -1,59 +1,88 @@
-#
-import usb1
+#!/usr/bin/python
 
-VENDOR_ID = "Hello"
-PRODUCT_ID = "hELLO"
-INTERFACE = "hELLO"
-ENDPOINT = "hELLO"
-BUFFER_SIZE = 20
-with usb1.USBContext() as context:
-    handle = context.openByVendorIDAndProductID(
-        VENDOR_ID,
-        PRODUCT_ID,
-        skip_on_error=True,
-    )
-    if handle is None:
-        # Device not present, or user is not allowed to access device.
-        print("Device could not be found, wrong parameters")
-    with handle.claimInterface(INTERFACE):
-        # Do stuff with endpoints on claimed interface.
-        print("The interface was found!, now use it")
+"""
+Test Barcode Reader
 
-        # Synchronous I/O
-        while True:
-            data = handle.bulkRead(ENDPOINT, BUFFER_SIZE)
-            # Process data...
-            print(data)
-            print("We now have the data and the testing of it can begin!")
+(text output, no audio)
+ 
+USAGE:
+$ sudo ./test.py
+
+Also
+sudo python ./test.py
+sudo python3 ./test.py
+"""
 
 
-#Asynchronous I/0, with more error handling
-def processReceivedData(transfer):
-    if transfer.getStatus() != usb1.TRANSFER_COMPLETED:
-        # Transfer did not complete successfully, there is no data to read.
-        # This example does not resubmit transfers on errors. You may want
-        # to resubmit in some cases (timeout, ...).
-        return
-    data = transfer.getBuffer()[:transfer.getActualLength()]
-    # Process data...
-    # Resubmit transfer once data is processed.
-    transfer.submit()
+import sys
+import os,subprocess
+import atexit
+import re
 
 
-# Build a list of transfer objects and submit them to prime the pump.
-transfer_list = []
-for _ in range(TRANSFER_COUNT):
-    transfer = handle.getTransfer()
-    transfer.setBulk(
-        usb1.ENDPOINT_IN | ENDPOINT,
-        BUFFER_SIZE,
-        callback=processReceivedData,
-    )
-    transfer.submit()
-    transfer_list.append(transfer)
-# Loop as long as there is at least one submitted transfer.
-while any(x.isSubmitted() for x in transfer_list):
-    try:
-        context.handleEvents()
-    except usb1.USBErrorInterrupted:
-        pass
+hid = { 4: 'a', 5: 'b', 6: 'c', 7: 'd', 8: 'e', 9: 'f', 10: 'g', 11: 'h', 12: 'i', 13: 'j', 14: 'k', 15: 'l', 16: 'm', 17: 'n', 18: 'o', 19: 'p', 20: 'q', 21: 'r', 22: 's', 23: 't', 24: 'u', 25: 'v', 26: 'w', 27: 'x', 28: 'y', 29: 'z', 30: '1', 31: '2', 32: '3', 33: '4', 34: '5', 35: '6', 36: '7', 37: '8', 38: '9', 39: '0', 44: ' ', 45: '-', 46: '=', 47: '[', 48: ']', 49: '\\', 51: ';' , 52: '\'', 53: '~', 54: ',', 55: '.', 56: '/'  }
+
+hid2 = { 4: 'A', 5: 'B', 6: 'C', 7: 'D', 8: 'E', 9: 'F', 10: 'G', 11: 'H', 12: 'I', 13: 'J', 14: 'K', 15: 'L', 16: 'M', 17: 'N', 18: 'O', 19: 'P', 20: 'Q', 21: 'R', 22: 'S', 23: 'T', 24: 'U', 25: 'V', 26: 'W', 27: 'X', 28: 'Y', 29: 'Z', 30: '!', 31: '@', 32: '#', 33: '$', 34: '%', 35: '^', 36: '&', 37: '*', 38: '(', 39: ')', 44: ' ', 45: '_', 46: '+', 47: '{', 48: '}', 49: '|', 51: ':' , 52: '"', 53: '~', 54: '<', 55: '>', 56: '?'  }
+
+
+"""
+The original part for PYTHON 2 was
+fp = open('/dev/hidraw0', 'rb')
+This opened a binary file which did not
+work when I tried to run it with Python 3
+The fix was simple, just change to rt
+So now it is read from a text file, not
+a binary file
+"""
+fp = open('/dev/hidraw0', 'rt')
+
+ss = ""
+shift = False
+done = False
+
+print("Scan a barcode")
+
+while not done:
+    # Get the character from the HID
+        buffer = fp.read(8)
+        for c in buffer:
+          if ord(c) > 0:
+
+             ##  40 is carriage return which signifies
+             ##  we are done looking for characters
+             if int(ord(c)) == 40:
+                done = True
+                break;
+
+             ##  If we are shifted then we have to 
+             ##  use the hid2 characters.
+             if shift: 
+
+                ## If it is a '2' then it is the shift key
+                if int(ord(c)) == 2 :
+                   shift = True
+
+                ## if not a 2 then lookup the mapping
+                else:
+                   ss += hid2[ int(ord(c)) ]
+                   shift = False
+
+             ##  If we are not shifted then use
+             ##  the hid characters
+
+             else:
+
+                ## If it is a '2' then it is the shift key
+                if int(ord(c)) == 2 :
+                   shift = True
+
+                ## if not a 2 then lookup the mapping
+                else:
+                   ss += hid[ int(ord(c)) ]
+         
+# END DONE LOOP  
+print(ss)
+
+         
+
+
