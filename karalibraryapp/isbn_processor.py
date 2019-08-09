@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import sys
+sys.path.append('/home/pi/.local/lib/python3.7/site-packages')
 
 # https://pypi.org/project/isbntools/
 from isbntools.app import isbn_from_words
@@ -7,6 +9,11 @@ from isbntools.app import meta
 from isbntools.app import to_isbn13 as convert_isbn10_to_isbn13
 from isbnlib.dev import NoDataForSelectorError
 from isbnlib.dev import ISBNLibHTTPError
+
+from barcode_reader import scan_barcode_pi
+
+# Global variable to use for barcode
+
 """
 File Name: isbn_processor.py
 Purpose: To take in isbn's from a raw.txt file

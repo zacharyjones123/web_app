@@ -31,57 +31,70 @@ fp = open('/dev/hidraw0', 'rb')
 This opened a binary file which did not
 work when I tried to run it with Python 3
 The fix was simple, just change to rt
-So now it is read from a text file, not
+So now it is read from a tex9781608636921
+file, not
 a binary file
 """
-fp = open('/dev/hidraw0', 'rt')
 
-ss = ""
-shift = False
-done = False
+"""
+NOTE: Bug was found with the hidraw2 file.
+Turns out that the barcode scanner might change
+between the input into certain files. I had hidraw0
+before, but it changed to hidraw2.
 
-print("Scan a barcode")
+I found this out by running this command on the cmd
+lsusb = to get list of devices
+dmesg = to get everything that has happened (a system log)
+"""
 
-while not done:
-    # Get the character from the HID
-        buffer = fp.read(8)
-        for c in buffer:
-          if ord(c) > 0:
+def scan_barcode_pi():
+    fp = open('/dev/hidraw2', 'rt')
 
-             ##  40 is carriage return which signifies
-             ##  we are done looking for characters
-             if int(ord(c)) == 40:
-                done = True
-                break;
+    ss = ""
+    shift = False
+    done = False
 
-             ##  If we are shifted then we have to 
-             ##  use the hid2 characters.
-             if shift: 
+    print("Scan a barcode")
 
-                ## If it is a '2' then it is the shift key
-                if int(ord(c)) == 2 :
-                   shift = True
 
-                ## if not a 2 then lookup the mapping
+    while not done:
+        # Get the character from the HID
+            buffer = fp.read(8)
+            for c in buffer:
+              if ord(c) > 0:
+
+                 ##  40 is carriage return which signifies
+                 ##  we are done looking for characters
+                if int(ord(c)) == 40:
+                    done = True
+                    break;
+
+                 ##  If we are shifted then we have to 
+                 ##  use the hid2 characters.
+                if shift: 
+
+                    ## If it is a '2' then it is the shift key
+                    if int(ord(c)) == 2 :
+                       shift = True
+
+                    ## if not a 2 then lookup the mapping
+                    else:
+                       ss += hid2[ int(ord(c)) ]
+                       shift = False
+
+                 ##  If we are not shifted then use
+                 ##  the hid characters
+
                 else:
-                   ss += hid2[ int(ord(c)) ]
-                   shift = False
 
-             ##  If we are not shifted then use
-             ##  the hid characters
+                    ## If it is a '2' then it is the shift key
+                    if int(ord(c)) == 2 :
+                       shift = True
 
-             else:
-
-                ## If it is a '2' then it is the shift key
-                if int(ord(c)) == 2 :
-                   shift = True
-
-                ## if not a 2 then lookup the mapping
-                else:
-                   ss += hid[ int(ord(c)) ]
-         
-# END DONE LOOP  
-print(ss)
+                    ## if not a 2 then lookup the mapping
+                    else:
+                       ss += hid[ int(ord(c)) ]
+    return ss
 
          
 
