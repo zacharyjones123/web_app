@@ -73,6 +73,10 @@ def select_from_database():
     for result in result_set:
         print(result)
     print(result_set)
+    
+def gui_barcode_test():
+    book_data = get_data(scan_barcode_pi())
+    return book_data
 
 
 def __str__(self):

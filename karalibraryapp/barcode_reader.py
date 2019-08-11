@@ -53,7 +53,7 @@ dmesg = to get everything that has happened (a system log)
 
 
 def scan_barcode_pi():
-    fp = open('/dev/hidraw2', 'rt')
+    fp = open('/dev/hidraw0', 'rt')
 
     ss = ""
     shift = False

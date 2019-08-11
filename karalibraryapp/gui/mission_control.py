@@ -1,8 +1,8 @@
 import tkinter as tk                # python 3
 from tkinter import font  as tkfont # python 3
-from karalibraryapp.gui.start_prompt import StartWindow
-from karalibraryapp.gui.login_prompt import LoginWindow
-from karalibraryapp.gui.teacher_dashboard import TeacherWindow
+from start_prompt import StartWindow
+from login_prompt import LoginWindow
+from teacher_dashboard import TeacherWindow
 # import Tkinter as tk     # python 2
 # import tkFont as tkfont  # python 2
 
