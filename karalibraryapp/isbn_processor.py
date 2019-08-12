@@ -77,6 +77,12 @@ def clean_isbn(isbn_given):
 
 
 def add_book(line):
+    """
+    This is meant to only add one book to the library
+
+    :param line:
+    :return:
+    """
     write_book_to_file(get_data(line))
 
 
@@ -148,6 +154,12 @@ def write_book_to_file(dictionary):
 
 
 def get_book_list_from_file():
+    """
+    Using data from isbn.txt, make a
+    list of dictionarys for books
+
+    :return:
+    """
     new_dict = []
     with open("isbn.txt", "r") as isbn_txt:
         counter = 0
@@ -171,6 +183,13 @@ def get_book_list_from_file():
 
 
 def process_isbns():
+    """
+    Take isbns's from raw.txt and get the
+    info about the books, and write them to
+    isbn_temp.txt
+
+    :return:
+    """
     # Type Error = invalid ISBN number
     # isbnlib.dev._exceptions.ISBNNotConsistentError = not sure of this error yet
     num_of_requests = 0
@@ -200,6 +219,12 @@ def process_isbns():
 
 
 def clean_file():
+    """
+    This method is to remove new lines and other
+    nonsense from the information about the books
+
+    :return:
+    """
     print("Hello")
     col_order = ["Author", "Type", "Title", "ISBN", "Year", "Publisher"]
     count = 0  # Index
@@ -229,14 +254,29 @@ def clean_file():
 
 
 def __str__(self):
+    """
+    __str__ method
+    :param self:
+    :return:
+    """
     return self.__name__
 
 
 def __repr__(self):
+    """
+    __repr__ method
+    :param self:
+    :return:
+    """
     return self.__name__
 
 
 def __format__(self, f):
-
+    """
+    __format__ method
+    :param self:
+    :param f:
+    :return:
+    """
     if f[-1] == 's':
         return self.__name__

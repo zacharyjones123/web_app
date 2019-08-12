@@ -1,15 +1,31 @@
 import tkinter as tk                # python 3
-from tkinter import font  as tkfont # python 3
+from tkinter import font as tkfont  # python 3
 from start_prompt import StartWindow
 from login_prompt import LoginWindow
 from teacher_dashboard import TeacherWindow
 # import Tkinter as tk     # python 2
 # import tkFont as tkfont  # python 2
 
+"""
+MissionControl
+
+This class serves as the way that
+all of the windows are organized and 
+switched between to share data
+"""
+
 
 class SampleApp(tk.Tk):
+    """
+    MissionControl
+    """
 
     def __init__(self, *args, **kwargs):
+        """
+        This initializes the MissionControl
+        :param args:
+        :param kwargs:
+        """
         tk.Tk.__init__(self, *args, **kwargs)
 
         self.geometry("1900x600")
@@ -39,11 +55,22 @@ class SampleApp(tk.Tk):
         self.show_frame("StartWindow")
 
     def show_frame(self, page_name):
+        """
+        This shows whatever frame is given on the
+        main root frame
+
+        :param page_name:
+        :return:
+        """
         '''Show a frame for the given page name'''
         frame = self.frames[page_name]
         frame.tkraise()
 
 
 if __name__ == "__main__":
+    """
+    Main method to be ran
+    """
+
     app = SampleApp()
     app.mainloop()

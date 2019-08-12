@@ -1,9 +1,25 @@
 import tkinter as tk
 # import tkinter.ttk as tkk
 
+"""
+LoginWindow
+
+This is the main window for logging in
+More information coming soon!
+"""
+
 
 class LoginWindow(tk.Frame):
+    """
+    LoginWindow
+    """
     def __init__(self, parent, controller):
+        """
+        This initializes the LoginWindow
+
+        :param parent:
+        :param controller:
+        """
         tk.Frame.__init__(self, parent)
         self.controller = controller
 

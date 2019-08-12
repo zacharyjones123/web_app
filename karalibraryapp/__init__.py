@@ -9,3 +9,4 @@ More information about the project later
 """
 
 __author__ = "Zachary Jones"
+__email__ = "zrjones77@gmail.com"

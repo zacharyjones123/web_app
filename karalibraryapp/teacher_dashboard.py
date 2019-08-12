@@ -1,9 +1,19 @@
 import tkinter as tk
-import tkinter.ttk as tkk
+# import tkinter.ttk as tkk
 from website_sql import gui_barcode_test
+
+"""
+TeacherWindow
+"""
 
 
 def create_menu(window):
+    """
+    This is used to create the menu for the window
+
+    :param window:
+    :return:
+    """
 
     # This makes the menu
     # --------------------------------------------------
@@ -55,44 +65,59 @@ def create_menu(window):
 
 
 class TeacherWindow(tk.Frame):
+    """
+    TeacherWindow
+    """
     def __init__(self, parent, controller):
+        """
+        This initializes the TeacherWindow
+
+        :param parent:
+        :param controller:
+        """
         tk.Frame.__init__(self, parent)
         self.controller = controller
-
 
         header = tk.Frame(self, bg='black')
         content = tk.Frame(self, bg='red')
         footer = tk.Frame(self, bg='black')
 
         name = "Kara"
-        title_lbl = tk.Label(header, text="Welcome {},".format(name), anchor=tk.W, justify=tk.LEFT, font=('helvetica 32'))
+        title_lbl = tk.Label(header, text="Welcome {},".format(name), anchor=tk.W, justify=tk.LEFT, font='helvetica 32')
         title_lbl.pack(side=tk.LEFT)
 
-        logout_btn = tk.Button(header, text="Log Off", anchor=tk.E,command=lambda: controller.show_frame("LoginWindow"), justify=tk.RIGHT, font=('helvetica 32'))
+        logout_btn = tk.Button(header,
+                               text="Log Off", anchor=tk.E,
+                               command=lambda: controller.show_frame("LoginWindow"),
+                               justify=tk.RIGHT, font='helvetica 32')
         logout_btn.pack(side=tk.RIGHT)
 
-        welcome_lbl = tk.Label(content, text="What do you need today?", anchor=tk.W, justify=tk.LEFT, font=('helvetica 20'))
+        welcome_lbl = tk.Label(content, text="What do you need today?",
+                               anchor=tk.W,
+                               justify=tk.LEFT,
+                               font='helvetica 20')
         # anchor options: n, ne, e, se, s, sw, w, nw, or center
         welcome_lbl.grid(row=0, column=0)
 
-        #New Frame for the buttons
+        # New Frame for the buttons
         buttons_frame = tk.Frame(content, bg="black")
         # Now need to add buttons
         # View Books Button
-        view_books_btn = tk.Button(buttons_frame, text="View Books", command=lambda: add_book_gui(), font=('helvetica 20'))
+        view_books_btn = tk.Button(buttons_frame,
+                                   text="View Books",
+                                   command=lambda: add_book_gui(),
+                                   font='helvetica 20')
         view_books_btn.grid(row=0, column=0)
 
         # Stats Button
-        stats_btn = tk.Button(buttons_frame, text="Statistics", font=('helvetica 20'))
+        stats_btn = tk.Button(buttons_frame, text="Statistics", font='helvetica 20')
         stats_btn.grid(row=1, column=0)
 
         # View Students Button
-        view_students_btn = tk.Button(buttons_frame, text="View Students", font=('helvetica 20'))
+        view_students_btn = tk.Button(buttons_frame, text="View Students", font='helvetica 20')
         view_students_btn.grid(row=2, column=0)
 
         buttons_frame.grid(row=1, column=0)
-
-
 
         # List box thowing all of the books
         title_header = tk.Label(content, text="Title", font='helvetica 20')
@@ -149,5 +174,3 @@ class TeacherWindow(tk.Frame):
         header.grid(row=0, sticky='news')
         content.grid(row=1, sticky='news')
         footer.grid(row=2, sticky='news')
-
-

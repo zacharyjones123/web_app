@@ -53,6 +53,10 @@ dmesg = to get everything that has happened (a system log)
 
 
 def scan_barcode_pi():
+    """
+    Method to scan the barcode on Raspberry Pi
+    :return:
+    """
     fp = open('/dev/hidraw0', 'rt')
 
     ss = ""

@@ -106,14 +106,32 @@ def collect_years():
 
 
 def __str__(self):
+    """
+    __str__ method
+
+    :param self:
+    :return:
+    """
     return self.__name__
 
 
 def __repr__(self):
+    """
+    __repr__ method
+
+    :param self:
+    :return:
+    """
     return self.__name__
 
 
 def __format__(self, f):
+    """
+    __format__ method
 
+    :param self:
+    :param f:
+    :return:
+    """
     if f[-1] == 's':
         return self.__name__
