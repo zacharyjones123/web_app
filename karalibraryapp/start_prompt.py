@@ -9,27 +9,66 @@ StartWindow
 This window is where the program starts
 More information coming soon!
 """
+bgimage = None
 
 
 class StartWindow(tk.Frame):
     """
-    StartWindow
+    TeacherWindow
     """
+
+    @staticmethod
+    def init_background_image():
+        global bgimage
+        fname = "C:\\Users\\Zachary R. Jones\\Downloads\\front_book_PNG.png"
+        bgimage = tk.PhotoImage(file=fname)
 
     def __init__(self, parent, controller):
         """
-        This initializes the StartWindow
+        This initializes the TeacherWindow
 
         :param parent:
         :param controller:
         """
+
+        self.init_background_image()
+
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        welcome_message_lbl = tk.Label(self, text="Kara Library Application", justify=tk.CENTER, font='helvetica 20')
-        welcome_message_lbl.grid(row=0, column=0)
+        content = tk.Frame(self, bg='#D2B48C')# Tan
 
-        enter_btn = tk.Button(self, text="Enter",
-                              command=lambda: controller.show_frame("LoginWindow"),
-                              justify=tk.CENTER, font='helvetica 20')
-        enter_btn.grid(row=1, column=0)
+        # get the width and height of the image 400x596
+        cv = tk.Canvas(content, width=400, height=569)
+        cv.pack(expand=tk.YES, fill=tk.BOTH)
+        cv.create_image(0, 0, image=bgimage, anchor='nw')
+
+        title_lbl = tk.Label(content,
+                             text="Library Application",
+                             anchor=tk.CENTER,
+                             justify=tk.CENTER,
+                             font='helvetica 30',
+                             bg="#D2B48C"
+                             )
+        title_lbl.pack() # used this to center vertically
+        cv.create_window(55, 100, anchor = tk.NW, window=title_lbl)
+
+        welcome_lbl = tk.Button(content, text="Enter",
+                                anchor=tk.CENTER,
+                                justify=tk.CENTER,
+                                font='helvetica 30',
+                                relief = "groove",
+                                bg="#D2B48C",
+                                command=lambda: controller.show_frame("LoginWindow")) # flat, groove, raised, ridge, solid, or sunken
+        # anchor options: n, ne, e, se, s, sw, w, nw, or center
+        cv.create_window(150, 300, anchor = tk.NW, window=welcome_lbl) # Used this to center vertically
+
+        cv.pack()
+
+        self.columnconfigure(0, weight=1)  # 100%
+
+        self.rowconfigure(0, weight=1)  # 10%
+        self.rowconfigure(1, weight=8)  # 80%
+        self.rowconfigure(2, weight=1)  # 10%
+
+        content.grid(row=1, sticky='news')

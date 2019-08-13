@@ -1,8 +1,8 @@
 import tkinter as tk                # python 3
 from tkinter import font as tkfont  # python 3
-from start_prompt import StartWindow
-from login_prompt import LoginWindow
-from teacher_dashboard import TeacherWindow
+from karalibraryapp.start_prompt import StartWindow
+from karalibraryapp.login_prompt import LoginWindow
+from karalibraryapp.teacher_dashboard import TeacherWindow
 # import Tkinter as tk     # python 2
 # import tkFont as tkfont  # python 2
 
@@ -14,12 +14,19 @@ all of the windows are organized and
 switched between to share data
 """
 
+bgimage = None
 
 
 class SampleApp(tk.Tk):
     """
     MissionControl
     """
+
+    @staticmethod
+    def init_background_image():
+        global bgimage
+        fname = "C:\\Users\\Zachary R. Jones\\Downloads\\front_book_PNG.png"
+        bgimage = tk.PhotoImage(file=fname)
 
     def __init__(self, *args, **kwargs):
         """
@@ -28,9 +35,10 @@ class SampleApp(tk.Tk):
         :param kwargs:
         """
         tk.Tk.__init__(self, *args, **kwargs)
-
-        self.geometry("1900x600")
-        self.wm_title("Kara's Library Application")
+        self.init_background_image()
+        self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+        self.wm_title("Library Application")
+        # self.overrideredirect(1) # This is used to get rid of title bar
 
         self.title_font = tkfont.Font(family='Helvetica', size=18, weight="bold", slant="italic")
 
