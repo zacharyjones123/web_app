@@ -23,10 +23,10 @@ class SampleApp(tk.Tk):
     """
 
     @staticmethod
-    def init_background_image():
+    def init_background_image(self, fname):
         global bgimage
-        fname = "C:\\Users\\Zachary R. Jones\\Downloads\\front_book_PNG.png"
         bgimage = tk.PhotoImage(file=fname)
+        self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
 
     def __init__(self, *args, **kwargs):
         """
@@ -35,11 +35,9 @@ class SampleApp(tk.Tk):
         :param kwargs:
         """
         tk.Tk.__init__(self, *args, **kwargs)
-        self.init_background_image()
-        self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+
         self.wm_title("Library Application")
         # self.overrideredirect(1) # This is used to get rid of title bar
-
         self.title_font = tkfont.Font(family='Helvetica', size=18, weight="bold", slant="italic")
 
         # the container is where we'll stack a bunch of frames
@@ -71,7 +69,23 @@ class SampleApp(tk.Tk):
         :param page_name:
         :return:
         """
+        start_bg = "C:\\Users\\Zachary R. Jones\\Downloads\\front_book_PNG.png"
+        login_bg = "C:\\Users\\Zachary R. Jones\\Downloads\\front_book_PNG.png"
+        teacher_bg = "C:\\Users\\Zachary R. Jones\\Downloads\\open_book_PNG.png"
+
         '''Show a frame for the given page name'''
+        if page_name == "StartWindow":
+            self.init_background_image(self, start_bg)
+            self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+            self.wm_title("StartWindow")
+        elif page_name == "LoginWindow":
+            self.init_background_image(self, login_bg)
+            self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+            self.wm_title("LoginWindow")
+        elif page_name == "TeacherWindow":
+            self.init_background_image(self, teacher_bg)
+            self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+            self.wm_title("TeacherWindow")
         frame = self.frames[page_name]
         frame.tkraise()
 
