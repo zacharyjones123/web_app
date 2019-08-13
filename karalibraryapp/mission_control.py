@@ -15,6 +15,7 @@ switched between to share data
 """
 
 
+
 class SampleApp(tk.Tk):
     """
     MissionControl
