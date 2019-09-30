@@ -84,7 +84,7 @@ class SampleApp(tk.Tk):
             self.wm_title("LoginWindow")
         elif page_name == "TeacherWindow":
             self.init_background_image(self, teacher_bg)
-            self.geometry("{}x{}".format(str(bgimage.width()), str(bgimage.height())))
+            self.geometry("{}x{}".format(str(bgimage.width()+400), str(bgimage.height()+200)))
             self.wm_title("TeacherWindow")
         frame = self.frames[page_name]
         frame.tkraise()

@@ -1,6 +1,7 @@
 import tkinter as tk
 # import tkinter.ttk as tkk
 from karalibraryapp.website_sql import gui_barcode_test
+from karalibraryapp.website_sql import select_from_database
 
 """
 TeacherWindow
@@ -133,6 +134,27 @@ class TeacherWindow(tk.Frame):
         view_students_btn = tk.Button(buttons_frame, text="View Students", font='helvetica 20')
         view_students_btn.grid(row=2, column=0)
 
+        # Add Books Button
+        add_book_btn = tk.Button(buttons_frame, text="Add Book", font='helvetica 20')
+        add_book_btn.grid(row=3, column=0)
+
+        # Edit Book Button
+        edit_book_btn = tk.Button(buttons_frame, text="Edit Book", font='helvetica 20')
+        edit_book_btn.grid(row=4, column=0)
+
+        # New Feature 1
+        new_1_btn = tk.Button(buttons_frame, text="New Feature 1", font='helvetica 20')
+        new_1_btn.grid(row=5, column=0)
+
+        # New Feature 2
+        new_2_btn = tk.Button(buttons_frame, text="New Feature 2", font='helvetica 20')
+        new_2_btn.grid(row=6, column=0)
+
+        # New Feature 3
+        new_3_btn = tk.Button(buttons_frame, text="New Feature 3", font='helvetica 20')
+        new_3_btn.grid(row=7, column=0)
+
+
         buttons_frame.pack()
         cv.create_window(0, 50, anchor=tk.NW, window=buttons_frame)
 
@@ -143,40 +165,12 @@ class TeacherWindow(tk.Frame):
         title_header.pack(fill=tk.Y)
 
         title_scrollbar = tk.Scrollbar(books_frame, orient=tk.VERTICAL, width=50)
-        title_listbox = tk.Listbox(books_frame, font='helvetica 15', yscrollcommand=title_scrollbar.set, width=50)
-        title_listbox.insert(1, "Junebug - Alice Mead - 1995 - 9781234567890 - Zachary")
-        title_listbox.insert(2, "kasjdlf")
+        title_listbox = tk.Listbox(books_frame, font='helvetica 15', yscrollcommand=title_scrollbar.set, width=100)
+
+        # Add a book
+        self.add_all_database_books(title_listbox)
         # itle_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         title_listbox.pack(fill=tk.Y)
-
-        # author_header = tk.Label(books_frame, text="Author", font='helvetica 15')
-        # author_header.grid(row=0, column=2)
-
-        # author_listbox = tk.Listbox(books_frame, font='helvetica 15')
-        # author_listbox.insert(1, "Alice Mead")
-        # author_listbox.insert(1, "Me")
-        # author_listbox.grid(row=1, column=2)
-
-        # isbn_header = tk.Label(books_frame, text="ISBN", font='helvetica 15')
-        # isbn_header.grid(row=0, column=3)
-
-        # isbn_listbox = tk.Listbox(books_frame, font='helvetica 15')
-        # isbn_listbox.insert(1, "9780374339647")
-        # isbn_listbox.grid(row=1, column=3)
-
-        # year_header = tk.Label(books_frame, text="Year", font='helvetica 15')
-        # year_header.grid(row=0, column=4)
-
-        # year_listbox = tk.Listbox(books_frame, font='helvetica 15')
-        # year_listbox.insert(1, "1995")
-        # year_listbox.grid(row=1, column=4)
-
-        # publisher_header = tk.Label(books_frame, text="Publisher", font='helvetica 15')
-        # publisher_header.grid(row=0, column=5)
-
-        # publisher_listbox = tk.Listbox(books_frame, font='helvetica 15')
-        # publisher_listbox.insert(1, "Macmillan")
-        # publisher_listbox.grid(row=1, column=5)
 
         books_frame.pack()
         cv.create_window(200, 50, anchor=tk.NW, window=books_frame)
@@ -201,3 +195,12 @@ class TeacherWindow(tk.Frame):
         header.grid(row=0, sticky='news')
         content.grid(row=1, sticky='news')
         footer.grid(row=2, sticky='news')
+
+    def add_book_GUI(self, listbox, newbookstring):
+        print("Add A new book")
+        listbox.insert(1, newbookstring)
+
+    def add_all_database_books(self, listbox):
+        result_set = select_from_database()
+        for result in result_set:
+            listbox.insert(1, result)

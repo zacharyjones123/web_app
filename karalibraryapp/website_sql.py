@@ -3,9 +3,9 @@ import sys
 sys.path.append('/home/pi/.local/lib/python3.7/site-packages')
 sys.path.append('/home/pi/Desktop/web_app/web_app/karalibraryapp')
 import mysql.connector
-from isbn_processor import get_book_list_from_file
-from isbn_processor import get_data
-from barcode_reader import scan_barcode_pi
+from karalibraryapp.isbn_processor import get_book_list_from_file
+from karalibraryapp.isbn_processor import get_data
+from karalibraryapp.barcode_reader import scan_barcode_pi
 
 
 """
@@ -70,9 +70,11 @@ def select_from_database():
     mycursor.execute(query)
     result_set = mycursor.fetchall()
 
-    for result in result_set:
-        print(result)
-    print(result_set)
+    #for result in result_set:
+    #    print(result)
+    #print(result_set)
+
+    return result_set
 
 
 def gui_barcode_test():
